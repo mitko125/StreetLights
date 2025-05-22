@@ -1,0 +1,4422 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "В&ідкрити...\tCtrl+O",        ID_FILE_OPEN
+        MENUITEM "З&акрити",                    ID_FILE_CLOSE
+        MENUITEM "&Зберегти\tCtrl+S",           ID_FILE_SAVE
+        MENUITEM "З&берегти як...",             ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Друк...\tCtrl+P",            ID_FILE_PRINT
+        MENUITEM "Пере&гляд друку",             ID_FILE_PRINT_PREVIEW
+        MENUITEM "Властивості п&ринтера...",    ID_FILE_PRINT_SETUP
+        MENUITEM "Вла&стивості сторінки",       ID_FILE_PAGESETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Останні&й використаний файл", ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Вихід\tAlt+F4",              ID_APP_EXIT
+    END
+    POPUP "&Вигляд"
+    BEGIN
+        MENUITEM "С&трока інструментів",        ID_VIEW_TOOLBAR
+        MENUITEM "&Строка стану",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Налаштування"
+    BEGIN
+        MENUITEM "&Концентратор",               ID_DEVICE_SETUP
+        MENUITEM "&Вуличний світильник",        ID_LAMPS_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Оператори",                  ID_COBFIG_OPERATOR
+        MENUITEM "&Номер робочого місця",       ID_SELECT_PC
+        MENUITEM "&З'єднання з базою даних",    ID_CONFIG_DB
+    END
+    POPUP "&Керування"
+    BEGIN
+        MENUITEM "&Зміна оператору",            ID_SELECT_OPERATOR
+    END
+    POPUP "&Звіти"
+    BEGIN
+        MENUITEM "&Системи",                    ID_ACCOUNTS_SYSTEM
+        MENUITEM SEPARATOR
+        MENUITEM "&Тест LQI",                   ID_TEST_LQI
+        MENUITEM "&Видалення звітів",           ID_ACCOUNTS_CLEAR
+    END
+    POPUP "Ві&кна"
+    BEGIN
+        MENUITEM "&Каскадом",                   ID_WINDOW_CASCADE
+        MENUITEM "&Горизонтально",              ID_WINDOW_TILE_HORZ
+        MENUITEM "&Вертикально",                ID_WINDOW_TILE_VERT
+    END
+    POPUP "&Допомога"
+    BEGIN
+        MENUITEM "&Розділи довідки",            ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&О StreetLights...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\bmp00004.bmp"
+IDB_BITMAP_VAHS         BITMAP                  "res\\bmp00005.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 32, 32
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_DEVICE_SETUP
+    BUTTON      ID_LAMPS_SETUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ico00006.ico"
+IDR_DISPENSERTYPE       ICON                    "res\\ico00005.ico"
+IDR_TV_TRAC_ACOUNT      ICON                    "res\\ico00007.ico"
+IDR_TV_TRAC_DATA        ICON                    "res\\ico00008.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F10,         ID_STOP_ALL,            VIRTKEY, NOINVERT
+    VK_F4,          ID_APP_EXIT,            VIRTKEY, ALT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F9,          ID_SELECT_DEVICE,       VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 280, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About StreetLights"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "StreetLights Copyright (C) 2015",IDC_STATIC,7,61,119,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,223,84,50,14,WS_GROUP
+    LTEXT           "Версія БД  ",IDC_STATIC_VERSION_DB,7,88,90,10
+    LTEXT           "Версія         ",IDC_STATIC_VERSION,7,75,90,10
+    CONTROL         IDB_BITMAP_VAHS,IDC_STATIC,"Static",SS_BITMAP,7,7,379,139
+END
+
+IDD_DIALOG_DISBLED_LAMPS DIALOG 0, 0, 525, 295
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Відміна світильників"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Зберегти як файл",ID_SAVE_DATA,435,7,83,14
+    PUSHBUTTON      "Вихід",IDCANCEL,435,24,83,14
+    EDITTEXT        IDC_EDIT1,7,7,424,281,ES_MULTILINE | ES_UPPERCASE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_HARDWARE_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Концентратори"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "&Новий",IDC_BUTTON_NEW,757,77,50,14
+    PUSHBUTTON      "&Видалити",IDC_BUTTON_DEL,757,103,50,14
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,699,63,100,15
+    LTEXT           "IP адреса",IDC_STATIC,699,47,100,14
+    PUSHBUTTON      "Тест GPRS",IDC_BUTTON_TEST,763,156,44,22
+    PUSHBUTTON      "Hardware from file",IDC_BUTTON_LOAD,699,95,51,21,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Включити",IDC_BUTTON_ON,763,182,44,22
+    PUSHBUTTON      "Виключити",IDC_BUTTON_OFF,763,210,44,22
+    PUSHBUTTON      "Яскравість",IDC_BUTTON_LIGHT,763,269,44,22
+    PUSHBUTTON      "Тест GPRS",IDC_BUTTON_TEST1,701,156,44,22
+    PUSHBUTTON      "Включити",IDC_BUTTON_ON1,701,183,44,22
+    PUSHBUTTON      "Виключити",IDC_BUTTON_OFF1,701,210,44,22
+    PUSHBUTTON      "Яскравість",IDC_BUTTON_LIGHT1,701,269,44,22
+    LTEXT           "Все",IDC_STATIC,764,139,43,12
+    LTEXT           "Обраний",IDC_STATIC,703,139,43,12
+    EDITTEXT        IDC_EDIT_LIGHTS,731,250,45,15,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUMBER,768,25,29,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "№",IDC_STATIC,751,27,12,15
+    GROUPBOX        "Концентратор",IDC_STATIC,696,17,111,78
+    PUSHBUTTON      "Обнулити RAM",IDC_BUTTON_CLEAR_RAM1,702,324,52,18
+    PUSHBUTTON      "Обнулити RAM",IDC_BUTTON_CLEAR_RAM,755,324,52,18
+END
+
+IDD_LAMP_GROUPS DIALOG 0, 0, 199, 271
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Групи світильників"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Вихід",IDCANCEL,142,250,50,14
+    CONTROL         "Група 1",IDC_DB_GROUP1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,20,54,16
+    CONTROL         "Група 2",IDC_DB_GROUP2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,35,54,16
+    CONTROL         "Група 3",IDC_DB_GROUP3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,50,54,16
+    CONTROL         "Група 4",IDC_DB_GROUP4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,65,54,16
+    CONTROL         "Група 5",IDC_DB_GROUP5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,80,54,16
+    CONTROL         "Група 6",IDC_DB_GROUP6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,95,54,16
+    CONTROL         "Група 7",IDC_DB_GROUP7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,110,54,16
+    CONTROL         "Група 8",IDC_DB_GROUP8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,125,54,16
+    CONTROL         "Група 9",IDC_DB_GROUP9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,140,54,16
+    CONTROL         "Група 10",IDC_DB_GROUP10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,155,54,16
+    CONTROL         "Група 11",IDC_DB_GROUP11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,170,54,16
+    CONTROL         "Група 12",IDC_DB_GROUP12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,185,54,16
+    CONTROL         "Група 13",IDC_DB_GROUP13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,200,54,16
+    CONTROL         "Група 14",IDC_DB_GROUP14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,215,54,16
+    CONTROL         "Група 15",IDC_DB_GROUP15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,230,54,16
+    CONTROL         "Група 16",IDC_DB_GROUP16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,245,54,16
+    PUSHBUTTON      "Читати з бази даних",IDC_BUTTON_LOAD_DB,112,20,80,17
+    PUSHBUTTON      "Записати в базу даних",IDC_BUTTON_SAVE_DB,112,45,80,17
+    PUSHBUTTON      "Читати з світильника",IDC_BUTTON_LOAD_LAMP,112,110,80,17
+    PUSHBUTTON      "Записати в світильник",IDC_BUTTON_SAVE_LAMP,112,135,80,17
+    CTEXT           "Результат",IDC_STATIC_SUCSES,106,158,86,14
+END
+
+IDD_LAMP_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Вуличні світильники"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "MAC з файлу",IDC_BUTTON_LOAD,721,309,86,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Концентратор з файлу",IDC_BUTTON_LOAD_ROUTERS,721,329,86,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Скасування концентраторів",IDC_BUTTON_LOAD_ROUTERS_REJECT,721,349,86,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "&Видалити",IDC_BUTTON_DEL,747,71,50,14
+    PUSHBUTTON      "&Новий",IDC_BUTTON_NEW,747,44,50,14
+    EDITTEXT        IDC_EDIT_NUMBER,768,25,29,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Світильник",IDC_STATIC,744,15,57,49
+    LTEXT           "№",IDC_STATIC,751,27,12,15
+    PUSHBUTTON      "Яскравість",IDC_BUTTON_LIGHT1,729,193,50,14
+    EDITTEXT        IDC_EDIT_LIGHTS,729,176,50,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "Результат",IDC_STATIC_SUCSES,711,217,86,14
+END
+
+IDD_NEW_NAME DIALOG 0, 0, 186, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Введіть им'я"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,7,7,112,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Вибрати",IDOK,129,7,50,14
+    PUSHBUTTON      "Скасувати",IDCANCEL,129,24,50,14
+END
+
+IDD_NEW_OPERATOR DIALOG 0, 0, 199, 118
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Нов оператор"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,7,23,125,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSORD,7,57,125,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONFIRM_PASSWORD,8,92,125,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Вибрати",IDOK,142,7,50,14
+    PUSHBUTTON      "Скасувати",IDCANCEL,142,24,50,14
+    LTEXT           "Им'я",IDC_STATIC,7,9,84,10
+    LTEXT           "Пароль",IDC_STATIC,7,43,84,10
+    LTEXT           "Повторити пароль",IDC_STATIC,8,79,81,10
+END
+
+IDD_OPERATORS_SETUP DIALOG 0, 0, 261, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Оператори"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,190,160
+    PUSHBUTTON      "&Новий",IDC_BUTTON_NEW,204,7,50,14
+    PUSHBUTTON      "&Видалити",IDC_BUTTON_DEL,204,25,50,14
+    PUSHBUTTON      "&Виг.Друку",IDC_BUTTON_PRINT_PREVIEV,204,76,50,14
+    PUSHBUTTON      "&Друк",IDC_BUTTON_PRINT,204,93,50,14
+    PUSHBUTTON      "Вихід",IDCANCEL,204,161,50,14
+END
+
+IDD_PAGE_SETUP DIALOG 0, 0, 244, 93
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Налаштування друку сторінки"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_LEFT,56,20,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_RIGHT,136,20,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_TOP,56,42,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BOTTOM,136,43,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Таблиця на одній сторінці",IDC_CHECK_FIT_PAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,69,114,12
+    DEFPUSHBUTTON   "Вибрати",IDOK,187,7,50,14
+    PUSHBUTTON      "Скасувати",IDCANCEL,187,24,50,14
+    LTEXT           "Лівіше:",IDC_STATIC,18,20,31,12
+    LTEXT           "Вгору:",IDC_STATIC,18,42,31,12
+    LTEXT           "Праворуч:",IDC_STATIC,98,20,31,12
+    LTEXT           "Вниз",IDC_STATIC,98,43,31,12
+    GROUPBOX        "Переміщення [mm]",IDC_STATIC,7,7,173,57
+    CONTROL         "Чорне-біле",IDC_BLACK_WITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,136,69,56,13
+END
+
+IDD_PC_NUMBER DIALOG 0, 0, 186, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Введите номер рабочего места"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NUMBER,7,7,112,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Вибрати",IDOK,129,7,50,14
+    PUSHBUTTON      "Скасувати",IDCANCEL,129,24,50,14
+    LTEXT           "Робочі місця повинні мати різні номери для звітності.",IDC_STATIC,7,28,114,21
+END
+
+IDD_ROUTER_SELECT DIALOG 0, 0, 282, 321
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Обрати концентратор"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO2,7,6,208,308,CBS_SIMPLE | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Вибрати",IDOK,225,6,50,14
+    PUSHBUTTON      "Скасувати",IDCANCEL,225,24,50,14
+END
+
+IDD_ROUTER_TIMERS_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Таймери в концентраторах"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "Все",IDC_STATIC,756,7,43,12
+    LTEXT           "Обраний",IDC_STATIC,705,7,43,12
+    PUSHBUTTON      "Програм",IDC_BUTTON_SET1,702,23,52,18
+    PUSHBUTTON      "Прочитати",IDC_BUTTON_GET1,702,47,52,18
+    PUSHBUTTON      "Програм",IDC_BUTTON_SET,755,23,52,18
+    PUSHBUTTON      "Прочитати",IDC_BUTTON_GET,755,47,52,18
+END
+
+IDD_SELECT_OPERATOR DIALOG 0, 0, 186, 91
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Вибір оператору"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_NAME,7,22,112,55,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PASSWORD,7,70,112,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Вибрати",IDOK,129,7,50,14
+    PUSHBUTTON      "Скасувати",IDCANCEL,129,24,50,14
+    LTEXT           "Им'я",IDC_STATIC,7,7,22,12
+    LTEXT           "Пароль",IDC_STATIC,7,57,64,10
+END
+
+IDD_TIMERS_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Таймери"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "&Новий",IDC_BUTTON_NEW,757,10,50,14
+    PUSHBUTTON      "&Видалити",IDC_BUTTON_DEL,757,29,50,14
+    EDITTEXT        IDC_LAT,718,76,65,15,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "Розрахувати",IDC_CALCULATE,718,128,65,20
+    RTEXT           "XX:XX",IDC_SUNRISE,718,173,65,19,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    GROUPBOX        "Схiд захiд",IDC_STATIC,707,51,85,184
+    LTEXT           "Координата п.ш.",IDC_STATIC,718,61,64,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_LON,718,108,65,15,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Координата с.д.",IDC_STATIC,718,93,64,14,SS_CENTERIMAGE
+    LTEXT           "Схiд",IDC_STATIC,718,156,64,14,SS_CENTERIMAGE
+    RTEXT           "XX:XX",IDC_SUNSET,718,208,65,19,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    LTEXT           "Захiд",IDC_STATIC,718,192,64,14,SS_CENTERIMAGE
+END
+
+IDD_WPAN_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WPAN_GPRS_Energy Meters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "Все",IDC_STATIC,756,7,43,12
+    LTEXT           "Обрати",IDC_STATIC,705,7,43,12
+    PUSHBUTTON      "Програм",IDC_BUTTON_SET1,702,23,52,18
+    PUSHBUTTON      "Прочитати",IDC_BUTTON_GET1,702,47,52,18
+    PUSHBUTTON      "Читати MAC",IDC_BUTTON_GET_MAC1,702,71,52,18
+    PUSHBUTTON      "Програм",IDC_BUTTON_SET,755,23,52,18
+    PUSHBUTTON      "Прочитати",IDC_BUTTON_GET,755,47,52,18
+    PUSHBUTTON      "Читати MAC",IDC_BUTTON_GET_MAC,755,71,52,18
+END
+
+IDD_LAMP_IN_ROUTER_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Світильники в концент"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "Все",IDC_STATIC,756,7,43,12
+    LTEXT           "Обраний",IDC_STATIC,705,7,43,12
+    PUSHBUTTON      "В мережі",IDC_BUTTON_GET1,702,86,52,18
+    PUSHBUTTON      "В мережі",IDC_BUTTON_GET,755,86,52,18
+    PUSHBUTTON      "Чужий св.",IDC_BUTTON_GET_REJECT1,702,145,52,18
+    PUSHBUTTON      "Програм",IDC_BUTTON_LAMPS_SET1,702,125,52,18
+    PUSHBUTTON      "Програм",IDC_BUTTON_LAMPS_SET,755,125,52,18
+    GROUPBOX        "Вуличний світильник",IDC_STATIC,699,74,108,129
+    PUSHBUTTON      "Статус",IDC_BUTTON_GET_LANPS_STATUS1,702,180,52,18
+    PUSHBUTTON      "Статус",IDC_BUTTON_GET_LANPS_STATUS,755,180,52,18
+    PUSHBUTTON      "Чужий св.",IDC_BUTTON_GET_REJECT,755,145,52,18
+    PUSHBUTTON      "Відкрити відмови",IDC_BUTTON_LOAD_ROUTERS_REJECT,721,350,86,14
+    PUSHBUTTON      "Прог.RADIUS",IDC_BUTTON_SET1,702,23,52,18
+    PUSHBUTTON      "Прог.RADIUS",IDC_BUTTON_SET,755,23,52,18
+END
+
+IDD_TYPE_LAMP_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Тип світильника"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "&Новий",IDC_BUTTON_NEW,757,10,50,14
+    PUSHBUTTON      "&Видалити",IDC_BUTTON_DEL,757,29,50,14
+END
+
+IDD_ENRGY_METERS DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Energy Meters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "All",-1,756,7,43,12
+    LTEXT           "Selected",-1,705,7,43,12
+    PUSHBUTTON      "Total",IDC_BUTTON_TOTAL1,702,41,52,18
+    PUSHBUTTON      "Current",IDC_BUTTON_CURRENT1,702,21,52,18
+    PUSHBUTTON      "Curent",IDC_BUTTON_CURRENT,755,21,52,18
+    PUSHBUTTON      "History",IDC_BUTTON_HISTORY1,702,76,52,18
+    PUSHBUTTON      "History",IDC_BUTTON_GET_HISTORY,755,76,52,18
+    PUSHBUTTON      "Total",IDC_BUTTON_TOTAL,755,41,52,18
+END
+
+IDD_DATE_TIME_LIMIT DIALOG 0, 0, 263, 83
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Date and Time Limits"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,206,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,206,24,50,14
+    CONTROL         "DateTimePicker1",IDC_DATE_MIN,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,7,23,75,15
+    CONTROL         "DateTimePicker1",IDC_DATE_MAX,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,7,53,75,15
+    CONTROL         "DateTimePicker1",IDC_TIME_MIN,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_SHOWNONE | WS_TABSTOP | 0x8,99,23,75,15
+    CONTROL         "DateTimePicker1",IDC_TIME_MAX,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_SHOWNONE | WS_TABSTOP | 0x8,99,53,75,15
+    LTEXT           "> =",IDC_STATIC,7,8,40,14
+    LTEXT           "< =",IDC_STATIC,7,38,40,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,0,0,0
+ PRODUCTVERSION 4,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "StreetLights MFC Application"
+            VALUE "FileVersion", "4.0.0.0"
+            VALUE "InternalName", "StreetLights"
+            VALUE "LegalCopyright", "Copyright (C) 2010"
+            VALUE "OriginalFilename", "StreetLights.EXE"
+            VALUE "ProductName", "StreetLights"
+            VALUE "ProductVersion", "4.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_DIALOG_DISBLED_LAMPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 518
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_HARDWARE_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_LAMP_GROUPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_LAMP_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_NEW_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_NEW_OPERATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_OPERATORS_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_PAGE_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_PC_NUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_ROUTER_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 314
+    END
+
+    IDD_ROUTER_TIMERS_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_SELECT_OPERATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_TIMERS_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_WPAN_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_LAMP_IN_ROUTER_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_TYPE_LAMP_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_ENRGY_METERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_DATE_TIME_LIMIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_DECORI              "Декори %s"
+    IDS_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDS_ERROR               "Помилка"
+    IDS_ADDRESS1            "Назва місця"
+    IDS_ADDRESS2            "Адреса"
+    IDS_GPRS_ERRORS         "GPRS Err."
+    IDS_ON_OFF              "On/Off"
+    IDS_NUMBER              "№"
+    IDS_CHANNEL             "Канал"
+    IDS_PAN_ID              "№ мережі"
+    IDS_SEQURITY            "Таємний ключ"
+    IDS_MAC_ADDRESS         "MAC адреса"
+    IDS_ON_OFF_POWER        "Графiк 1"
+    IDS_ON                  "On"
+    IDS_OFF                 "Off"
+    IDS_LIGHT               "Сила"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "StreetLights"
+    IDR_DISPENSERTYPE       "\nConnect"
+    IDR_TV_TRAC_DATA        "\nStreetLights\n\nStreetLights документи(*.slk)\n.slk\nStreetLights.Document\nStreetLights документ"
+    IDR_TV_TRAC_ACOUNT      "\nStreetLights\n\nStreetLights отчет(*.sld)\n.sld\nStreetLights.Account\nStreetLights отчет"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "StreetLights"
+    AFX_IDS_IDLEMESSAGE     "Для довідки, натисни F1"
+    AFX_IDS_HELPMODEMESSAGE "Обери об'єкт для довідки"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_SO         "Оператор відсутній"
+    ID_INDICATOR_LIM        "Декори 0.00m"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Створити нов документ\nНов"
+    ID_FILE_OPEN            "Відкрити існуючий документ\nВідкрити"
+    ID_FILE_CLOSE           "Закрити активний документ\nЗакрити"
+    ID_FILE_SAVE            "Зберегти активний документ\nЗберегти"
+    ID_FILE_SAVE_AS         "Зберегти активний документ з новим им'ям\nЗберегти як"
+    ID_FILE_PAGE_SETUP      "Змінить налаштування перегляду сторінки\nНалаштування сторінки"
+    ID_FILE_PRINT_SETUP     "Змінить налаштування принтеру\nНалаштування принтеру"
+    ID_FILE_PRINT           "Роздрукувати активний документ\nДрук"
+    ID_FILE_PRINT_PREVIEW   "Показати друк сторінки\nПоказати друк"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Показати інформацію про програму, номер версії та авторскі права.\nЗа StreetLights..."
+    ID_APP_EXIT             "Закрити додаток; Запропонувати зберегти документ.\nВихід"
+    ID_HELP_INDEX           "Показати перелік з розділами довідки\nРозділи довідки"
+    ID_HELP_FINDER          "Показати перелік з розділами довідки\nРозділи довідки"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Показати довідку при натисканні кнопки, меню або вікно\nДовідка"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Відкрити документ"
+    ID_FILE_MRU_FILE2       "Відкрити документ"
+    ID_FILE_MRU_FILE3       "Відкрити документ"
+    ID_FILE_MRU_FILE4       "Відкрити документ"
+    ID_FILE_MRU_FILE5       "Відкрити документ"
+    ID_FILE_MRU_FILE6       "Відкрити документ"
+    ID_FILE_MRU_FILE7       "Відкрити документ"
+    ID_FILE_MRU_FILE8       "Відкрити документ"
+    ID_FILE_MRU_FILE9       "Відкрити документ"
+    ID_FILE_MRU_FILE10      "Відкрити документ"
+    ID_FILE_MRU_FILE11      "Відкрити документ"
+    ID_FILE_MRU_FILE12      "Відкрити документ"
+    ID_FILE_MRU_FILE13      "Відкрити документ"
+    ID_FILE_MRU_FILE14      "Відкрити документ"
+    ID_FILE_MRU_FILE15      "Відкрити документ"
+    ID_FILE_MRU_FILE16      "Відкрити документ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Сортувати вікна каскадом\nКаскад"
+    ID_WINDOW_TILE_HORZ     "Сортувати вікна без перекриття\nГоризонтально"
+    ID_WINDOW_TILE_VERT     "Сортувати вікна без перекриття\nВертикально"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Показати або приховати стрічку інструментів\nСтрічка інструментів"
+    ID_VIEW_STATUS_BAR      "Показати або приховати стрічку стану\nСтрічка стану"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Змінити розмір вікна"
+    AFX_IDS_SCMOVE          "Змінити положення вікна"
+    AFX_IDS_SCMINIMIZE      "Зменшити вікно до іконки"
+    AFX_IDS_SCMAXIMIZE      "Збільшити вікно до повного розміру"
+    AFX_IDS_SCNEXTWINDOW    "Перейти до наступного документу"
+    AFX_IDS_SCPREVWINDOW    "Перейти до наступного документу"
+    AFX_IDS_SCCLOSE         "Закрити активне вікно та попросити зберегти документ"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Відновити вікно до нормального розміру"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Активувати це вікно"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Закрити перегляд друку\nКінець перегляду друку"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ANOTHER_TRAKERS     "Програма вже завантажена !!!"
+    IDS_PAGE_OF_PAGE        "Стр. %d от %d"
+    IDS_FILE_SAVE_AS_TEXT   "Текстовий документ (*.txt)|*.txt|Усі документи (*.*)|*.*||"
+    IDS_FILE_SAVE_AS_SAPSAN "Текстові документи (*.txt)|*.txt|Усі документи (*.*)|*.*||"
+    IDS_ERR_HARWARE_UNKNOWN "COM%d: невідома похибка"
+    IDS_ERR_HARWARE_NOT_PRESENT "COM%d: не встановлений"
+    IDS_ERR_HARWARE_IS_BUSY "COM%d: він зайнятий"
+    IDS_ERR_HARWARE_MORE_PROTOCOLS "Багато пристроїв"
+    IDS_SOCKET_ERR          "TCP %s не може встановити з'єднання"
+    IDS_DEVICE_SETUP        "Налаштування концентраторів"
+    IDS_TEXT_EXIT           "Вихід"
+    IDS_BUT_PRINT_PREVIEF   "&Виг.Друку"
+    IDS_BUT_PRINT           "&Друк"
+    IDS_BUT_UPDATE          "&Оновити"
+    IDS_HARDWARE            "IP адрес"
+    IDS_DELETE              "Стерти:\t"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_PAGESETUP       "Змінити налаштування для перегляду сторінки\nНалаштування сторінки"
+    ID_DEVICE_SETUP         "Налаштування  концентраторів підключення до вуличних світильників\nНалаштування  концентраторів"
+    ID_STOP_ALL             "Налаштування  HOST\nНалаштування  HOST"
+    ID_PROGRAM_DEVICES      "Програмування контролерів(сервисний режим)\nСервісний режим"
+    ID_SELECT_ALL           "Усі пристрої в групі на сцені\nУсі в групі"
+    ID_SELECT_DEVICE        "Избор на устройство по име F9\nИзбор на устройство F9"
+    ID_MOVE_UP_SLOW         "Power 1\nPower 1"
+    ID_MOVE_UP_FAST         "Power 85\nPower 85"
+    ID_MOVE_DOWN_FAST       "Power 170\nPower 170"
+    ID_MOVE_DOWN_SLOW       "Power 255\nPower 255"
+    ID_REPER                "OnOff time\nOnOff time"
+    ID_IN_POSITION          "Движение в заданное положение\nВ положение"
+    ID_IN_OFFSET_POSITION   "? SIM errors\n? SIM errors"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BUSY_IN_DEVICES     "%s світильник зайнятий"
+    IDS_HARDWARE_IS         "Апарат %s вже існує"
+    IDS_TEST_VIEW           "Тестове вікно"
+    IDS_NO_TEST_VIEV        "Без вікна"
+    IDS_NO_DATA             "Без даних"
+    IDS_FULL_TEST           "Повний тест"
+    IDS_STOP                "Стан"
+    IDS_WORK                "Включений"
+    IDS_NO_WORK             "Вимкнений"
+    IDS_NAME_IS             "Ім'я %s існує"
+    IDS_BUSY_IN_ACCOUNT     "%s зайнятий зчитуванням"
+    IDS_ADDRESS             "Адреса"
+    IDS_DEVICE              "Пристрій"
+    IDS_NO_CONNECT          "ПІДКЛЮЧИТИ"
+    IDS_PROGRAM_OK          "Вдале програмування"
+    IDS_PROGRAM_ERR         "ПОМИЛКА ПРОГРАМУВАННЯ !!!"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_AC_ERR              "AC помилка"
+    IDS_AC_OK               "AC в готовності"
+    IDS_LIMIT_UP            "Горен лимит"
+    IDS_LIMIT_DOWN          "Долен лимит"
+    IDS_LIMIT_SOFT          "Прогр. лимит"
+    IDS_LIMIT_NO            "Няма задействан лимит"
+    IDS_ERR_VAGE            "Оплетено въже"
+    IDS_LOCAL_UP            "Локално нагоре"
+    IDS_LOCAL_DOWN          "Локално надолу"
+    IDS_LOCAL_NO            "Няма локално движеение"
+    IDS_MOVE_UP             "Нагоре"
+    IDS_MOVE_DOWN           "Надолу"
+    IDS_VERSION             "Версія"
+    IDS_SUCSES              "Підключення"
+    IDS_HELP1               "Забележка 1"
+    IDS_HELP2               "Забележка 2"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NAME                "Им'я"
+    IDS_CLEAR_RAM           "Скид RAM"
+    IDS_OFFSET              "Отместване метри"
+    IDS_MIN                 "Долен лимит метри"
+    IDS_MAX                 "Горен лимит метри"
+    IDS_LIMITS              "Отместване и лимити"
+    IDS_ERR_REMAK           "Приплъзващ ремък"
+    IDS_NO_SCENE            "Няма избрани за сцена"
+    IDS_SAVE_TRACERS        "StreetLights документи(*.slk)|*.trk|Всё документи (*.*)|*.*||"
+    IDS_NO_DEVICE           "Не открыто устройсво с именем %s"
+    IDS_UNTITLED            "Неименование"
+    IDS_UNKNOV_DATA_BASE    "Неизвестная версия базы данных:%d.%.2d"
+    IDS_NOT_OPERATOR        "Нет оператора"
+    IDS_NOT_OPERATORS_INF   "Нет информации для оператора"
+    IDS_NOT_PASSWORD        "Неправильный пароль"
+    IDS_UNKNOW_OPERATOR_NAME "Неизвестный оператор"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ENABLE_MOVE          "Дозволено переміщення вікон пристроїв\nДозволено переміщення "
+    ID_REPER_ALL            "Задвижва избраните устройсрва до горен репер за обновяване на позицията\nВсё в репер"
+    ID_GO_DOWN_ALL          "Задвижва избраните устройсрва до долно положение\nВсё долу"
+    ID_SELECT               "Включить реле\nВключить реле"
+    ID_DESELECT             "Выключить реле\nВыключить реле"
+    ID_IN_STORED_ONE        "Избраното устройство в запомнена позиция от сцена\nВыбрать в запомнена позиция"
+    ID_IN_STORED_ALL        "Виконати запомнената сцена\nВиконати сцената"
+    ID_SELECT_OPERATOR      "Смена дежурного оператора\nСмена оператора"
+    ID_COBFIG_OPERATOR      "Настройка оператора\nОпрераторы"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SELECT_PC            "Зміна номеру робочого місця\nНомер робочого місця"
+    ID_CONFIG_DB            "Налаштування підключення до бази даних\nПідключення до бази даних"
+    ID_ACCOUNTS_SYSTEM      "Звіт про події в системі."
+    ID_ACCOUNTS_DEVICES     "Звіт про пристрої"
+    ID_ACCOUNTS_ONE_DEVICE  "Звіт про обрані пристрої"
+    ID_ACCOUNTS_CLEAR       "Видалити звіт"
+    ID_GO_UP_ALL            "Включити обрані пристрої в верхнє положення\nУсі вгору"
+    ID_DESELECT_ALL         "Всё устройства извън група за сцена\nРазгрупира Всё"
+    ID_CHANGE_DECORY        "Задава височината на декорите\nВисочина декори"
+    ID_LAMPS_SETUP          "Настройка уличных светильников\nНастройка уличных светильников"
+    ID_TEST_LQI             "Тест WPAN сети\nТест подключения"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PRIVILEGI           "Повноваження"
+    IDS_SERVIZ              "Обслуговування"
+    IDS_ADMIN               "Адміністративний"
+    IDS_OPER                "Оператори"
+    IDS_CURRENT_OPERATOR    "Працюючий оператор не может бути видаленний!"
+    IDS_NOT_CONFIRM_PASSWORD "Пароль не вірний"
+    IDS_NOT_PASSWORD_ADD    "Пароль відсутній"
+    IDS_NOT_NAME            "Ім'я відсутнє"
+    IDS_SYSTEM_ACCOUNT_NAME1 "Звіт про системні події"
+    IDS_OPERATOR            "Оператор"
+    IDS_DATETIME            "Час"
+    IDS_SYSTEM_TYPE         "Системна подія"
+    IDS_SYSTEM_UNKNOW       "Невідома подія !!!"
+    IDS_CONFIG_LAMPS        "Зміни у вуличних світильниках"
+    IDS_CONFIG_OPERATORS    "Зміни у оператора"
+    IDS_CONFIG_ROUTERS      "Зміни в концентраторі"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CONFIG_LIMITS       "Зміни в ліміті"
+    IDS_CONFIG_PC_NUMBER    "Зміни номеру робочого місця"
+    IDS_CONFIG_CONNECT      "Зміни підключення до бази даних"
+    IDS_SYSTEM_ACCOUNT_NAME "SA"
+    IDS_NUMBER_PC           "№ PC"
+    IDS_DEVICE_ACCOUNT_NAME1 "Звіт пристроїв"
+    IDS_DEVICE_ACCOUNT_NAME "DA"
+    IDS_METRI               "Метри"
+    IDS_DEVICE_TYPE         "Події в пристроях"
+    IDS_NONE                "Кінець події"
+    IDS_MOVE_UP_FAST        "Швидко в гору"
+    IDS_MOVE_DOWN_FAST      "Швидко вниз"
+    IDS_GO_REPER            "В репер"
+    IDS_GO_POS              "В позиція"
+    IDS_DELETE_ACCOUTS      "Ви впевнені, що бажаєти видалити звіт?"
+    IDS_CLEAR_ACCOUNTS      "Видалити звіт"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_GROUP               "Група %d"
+    IDS_BUSY_IN_RUTERS      "Зайнятий концентратор"
+    IDS_TIMERS              "Таймери"
+    IDS_RADIUS              "RADIUS"
+    IDS_LAMPS               "Вул.світ."
+    IDS_LAMPS_CONNECTED     "В мережі"
+    IDS_REJECTED            "Відмова підключення світ:"
+    IDS_ROUTER              "Концентратор"
+    IDS_LAST_CONTACT        "Останнє підключення"
+    IDS_WORK_HOURS          "Роб.години"
+    IDS_STREET              "Вулиця"
+    IDS_STREET_NUMBER       "№ світильника"
+    IDS_STREET_LAMPS        "Налаштування світильників"
+    IDS_DIABLED_LAMP_L1     "Рутер\tРутер\tULSL.\tРоб.\tБачить\t\t\tПідтверджено\t\tMAC\r\n"
+    IDS_DIABLED_LAMP_L2     "Отмен.\tпрогр.\t№\tгодини\t\t\t\t\t\t\tадресу\r\n"
+    IDS_FILE_SAVE_AS        "Text Files (*.txt)|*.txt|All Files (*.*)|*.*||"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LAST_TEST           "Перевірено"
+    IDS_PERCENT_CONNECTED   "Перевірені світильники %u, підключен %u  %% %.2lf"
+    IDS_NUMBER_IS_BUSY      "№ %u він зайнятий!"
+    IDS_BAD_MAC             "Помилка MAC адреси !"
+    IDS_GROUPS              "№ таймеру"
+    IDS_NO_RUTER            "Контцентратор відсутній!"
+    IDS_NO_HARDWARE         "Модуль відсутній !"
+    IDS_NO_LAMP             "Не підключен !"
+    IDS_TIME_ON_ROUTER      "Концентратор вкл"
+    IDS_TIME_OFF_ROUTER     "Концентратор викл"
+    IDS_CSQ                 "CSQ"
+    IDS_STATE               "State"
+    IDS_RELAY               "Реле"
+    IDS_TIME_ON             "Вкл"
+    IDS_TIME_OFF            "Викл"
+    IDS_TEST_LQI1           "Тест LQI концентратора : %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TEST_LQI            "LQI_%d"
+    IDS_LQI                 "LQI"
+    IDS_PER                 "PER%"
+    IDS_PARENT              "Концентратор / Предыдущий светильник"
+    IDS_CHILDREN            "Наступний світильник"
+    IDS_DEPTH               "Рівень"
+    IDS_LAT                 "Координата п.ш."
+    IDS_LNG                 "Координата с.д."
+    IDS_TYPE_LAMP           "Тип св-ка"
+    IDS_LABEL               "Примітка"
+    IDS_ON_OFF_POWER2       "Графiк 2"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CONFIG_ENERGY_METERS "Change Energy Meters"
+    IDS_CURRENT_ENERGY      "Curren Energy\tRouter:\t%s\t%s\t% 4d lamps\t% 6.3f kW\r\n"
+    IDS_CURRENT_ENERGY1     "Frequency\tHz\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY2     "Voltage      \tV\t                \t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY3     "Current       \tA\t                \t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY4     "Active power\tkW\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY5     "Reactive power\tkvar\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY6     "Apparent power\tkVA\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CURRENT_ENERGY7     "Power factor\t\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY_NAME "Current Energy"
+    IDS_CURRENT_ENERGY_FILE "CurrentEnergy_"
+    IDS_TOTAL_CALCULATED    "Total calculated \t% 4d lamps\t% 6.3f kW\r\n"
+    IDS_CURRENT_ENERGY8     "Active power\tkW\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY9     "Reactive power\tkvar\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY10    "Apparent power\tkVA\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY        "Total Energy\tRouter:\t%s\t%s\t% 4d lamps\t% 6.3f kW\r\n"
+    IDS_TOTAL_ENERGY1       "Active Enegy,T1,T2          \tkWh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY2       "Active Enegy L1,L2,L3     \tkWh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY3       "Reactive Enegy,T1,T2     \tkvarh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TOTAL_ENERGY4       "Reactive Enegy L1,L2,L3 \tkvarh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY_NAME   "Total Energy"
+    IDS_TOTAL_ENERGY_FILE   "TotalEnergy_"
+    IDS_HISTORY_ENERGY      "History Active Energy\tRouter:\t%s\t%s\t% 4d lamps\t% 6.3f kW\r\n"
+    IDS_HISTORY_ENERGY1     "Date time    Active Energy kW    \tTotal          \tL1            \tL2            \tL3\r\n"
+    IDS_HISTORY_ENERGY2     "%s\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_HISTORY_ENERGY_NAME "History Active Energy"
+    IDS_HISTORY_ENERGY_FILE "HistoryActiveEnergy_"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TOTAL               "Total\t\t\t\t\t%d\r\n"
+    IDS_RESER_SIM           "GPRS off/on"
+    IDS_HOST_VERSION        "HOST Ver."
+    IDS_JENNIC_VERSION      "COOR Ver."
+    IDS_POWER_W             "Power W"
+    IDS_WPAN                "WPAN"
+    IDS_RESET_GPRS          "Reset GPRS"
+    IDS_HOUR                "hour"
+    IDS_MINUTE              "min"
+    IDS_ENERGY_METER        "Energy Meter"
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Bulgarian (Bulgaria) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_BGR)
+LANGUAGE LANG_BULGARIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "О&твори...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "З&атвори",                    ID_FILE_CLOSE
+        MENUITEM "&Запиши\tCtrl+S",             ID_FILE_SAVE
+        MENUITEM "Запи&ши като...",             ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Печат...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "&Визуализация печат",         ID_FILE_PRINT_PREVIEW
+        MENUITEM "Настройка на п&ринтер...",    ID_FILE_PRINT_SETUP
+        MENUITEM "&Настройка страница",         ID_FILE_PAGESETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Последно използван Файл",     ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Изход\tAlt+F4",              ID_APP_EXIT
+    END
+    POPUP "&Изглед"
+    BEGIN
+        MENUITEM "Л&ента с инструменти",        ID_VIEW_TOOLBAR
+        MENUITEM "&Лента на състоянието",       ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Настройки"
+    BEGIN
+        MENUITEM "&Рутери",                     ID_DEVICE_SETUP
+        MENUITEM "&Улични осветители",          ID_LAMPS_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Опрератори",                 ID_COBFIG_OPERATOR
+        MENUITEM "&Номер работно място",        ID_SELECT_PC
+        MENUITEM "&Връзка с база данни",        ID_CONFIG_DB
+    END
+    POPUP "&Управление"
+    BEGIN
+        MENUITEM "&Смяна на оператор",          ID_SELECT_OPERATOR
+    END
+    POPUP "&Отчети"
+    BEGIN
+        MENUITEM "&Система",                    ID_ACCOUNTS_SYSTEM
+        MENUITEM SEPARATOR
+        MENUITEM "&Тест LQI",                   ID_TEST_LQI
+        MENUITEM "&Изтриване  на отчетите",     ID_ACCOUNTS_CLEAR
+    END
+    POPUP "П&розорци"
+    BEGIN
+        MENUITEM "&Каскадно",                   ID_WINDOW_CASCADE
+        MENUITEM "&Хоризонтално",               ID_WINDOW_TILE_HORZ
+        MENUITEM "&Вертикално",                 ID_WINDOW_TILE_VERT
+    END
+    POPUP "&Помощ"
+    BEGIN
+        MENUITEM "&Теми за помощ",              ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&За StreetLights...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\mainfram.bmp"
+IDB_BITMAP_VAHS         BITMAP                  "res\\bmp00003.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 32, 32
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_DEVICE_SETUP
+    BUTTON      ID_LAMPS_SETUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\idr_main.ico"
+IDR_TV_TRAC_DATA        ICON                    "res\\idr_tv_t.ico"
+IDR_DISPENSERTYPE       ICON                    "res\\icon1.ico"
+IDR_TV_TRAC_ACOUNT      ICON                    "res\\ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F10,         ID_STOP_ALL,            VIRTKEY, NOINVERT
+    VK_F4,          ID_APP_EXIT,            VIRTKEY, ALT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F9,          ID_SELECT_DEVICE,       VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 280, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About StreetLights"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "StreetLights Copyright (C) 2015",IDC_STATIC,7,61,119,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,223,84,50,14,WS_GROUP
+    LTEXT           "Версия БД  ",IDC_STATIC_VERSION_DB,7,88,90,10
+    LTEXT           "Версия         ",IDC_STATIC_VERSION,7,75,90,10
+    CONTROL         IDB_BITMAP_VAHS,IDC_STATIC,"Static",SS_BITMAP,7,7,379,139
+END
+
+IDD_HARDWARE_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Рутери"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "&Нов",IDC_BUTTON_NEW,757,77,50,14
+    PUSHBUTTON      "&Изтрий",IDC_BUTTON_DEL,757,103,50,14
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,699,63,100,15
+    LTEXT           "IP адрес",IDC_STATIC,699,47,100,14
+    PUSHBUTTON      "Тест GPRS",IDC_BUTTON_TEST,763,156,44,22
+    PUSHBUTTON      "Hardware from file",IDC_BUTTON_LOAD,699,95,51,21,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Включи",IDC_BUTTON_ON,763,182,44,22
+    PUSHBUTTON      "Изключи",IDC_BUTTON_OFF,763,210,44,22
+    PUSHBUTTON      "Яркост",IDC_BUTTON_LIGHT,763,269,44,22
+    PUSHBUTTON      "Тест GPRS",IDC_BUTTON_TEST1,701,156,44,22
+    PUSHBUTTON      "Включи",IDC_BUTTON_ON1,701,183,44,22
+    PUSHBUTTON      "Изключи",IDC_BUTTON_OFF1,701,210,44,22
+    PUSHBUTTON      "Яркост",IDC_BUTTON_LIGHT1,701,269,44,22
+    LTEXT           "Всички",IDC_STATIC,764,139,43,12
+    LTEXT           "Избрания",IDC_STATIC,703,139,43,12
+    EDITTEXT        IDC_EDIT_LIGHTS,731,250,45,15,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUMBER,768,25,29,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "№",IDC_STATIC,751,27,12,15
+    GROUPBOX        "Рутер",IDC_STATIC,696,17,111,78
+    PUSHBUTTON      "Нулирай RAM",IDC_BUTTON_CLEAR_RAM1,702,324,52,18
+    PUSHBUTTON      "Нулирай RAM",IDC_BUTTON_CLEAR_RAM,755,324,52,18
+END
+
+IDD_PAGE_SETUP DIALOG 0, 0, 244, 93
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Настройки на печатната страница"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_LEFT,56,20,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_RIGHT,136,20,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_TOP,56,42,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BOTTOM,136,43,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Таблиците  в една страница",IDC_CHECK_FIT_PAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,69,114,12
+    DEFPUSHBUTTON   "Изпълни",IDOK,187,7,50,14
+    PUSHBUTTON      "Отказ",IDCANCEL,187,24,50,14
+    LTEXT           "Ляво:",IDC_STATIC,18,20,31,12
+    LTEXT           "Горе:",IDC_STATIC,18,42,31,12
+    LTEXT           "Дясно:",IDC_STATIC,98,20,31,12
+    LTEXT           "Долу",IDC_STATIC,98,43,31,12
+    GROUPBOX        "Отместване [mm]",IDC_STATIC,7,7,173,57
+    CONTROL         "Черно бяло",IDC_BLACK_WITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,136,69,56,13
+END
+
+IDD_SELECT_OPERATOR DIALOG 0, 0, 186, 91
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Избор на оператор"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_NAME,7,22,112,55,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PASSWORD,7,70,112,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Изпълни",IDOK,129,7,50,14
+    PUSHBUTTON      "Отказ",IDCANCEL,129,24,50,14
+    LTEXT           "Име",IDC_STATIC,7,7,22,12
+    LTEXT           "Парола",IDC_STATIC,7,57,64,10
+END
+
+IDD_NEW_NAME DIALOG 0, 0, 186, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Въведете име"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,7,7,112,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Изпълни",IDOK,129,7,50,14
+    PUSHBUTTON      "Отказ",IDCANCEL,129,24,50,14
+END
+
+IDD_PC_NUMBER DIALOG 0, 0, 186, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Въведете номер работно място"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NUMBER,7,7,112,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Изпълни",IDOK,129,7,50,14
+    PUSHBUTTON      "Отказ",IDCANCEL,129,24,50,14
+    LTEXT           "Работните места трябва да са с различни номера за отчетност.",IDC_STATIC,7,28,114,21
+END
+
+IDD_OPERATORS_SETUP DIALOG 0, 0, 261, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Оператори"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,190,160
+    PUSHBUTTON      "&Нов",IDC_BUTTON_NEW,204,7,50,14
+    PUSHBUTTON      "&Изтрий",IDC_BUTTON_DEL,204,25,50,14
+    PUSHBUTTON      "&Виз.Печат",IDC_BUTTON_PRINT_PREVIEV,204,76,50,14
+    PUSHBUTTON      "&Печат",IDC_BUTTON_PRINT,204,93,50,14
+    PUSHBUTTON      "Изход",IDCANCEL,204,161,50,14
+END
+
+IDD_NEW_OPERATOR DIALOG 0, 0, 199, 118
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Нов оператор"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,7,23,125,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSORD,7,57,125,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONFIRM_PASSWORD,8,92,125,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Изпълни",IDOK,142,7,50,14
+    PUSHBUTTON      "Отказ",IDCANCEL,142,24,50,14
+    LTEXT           "Име",IDC_STATIC,7,9,84,10
+    LTEXT           "Парола",IDC_STATIC,7,43,84,10
+    LTEXT           "Повтори паролата",IDC_STATIC,8,79,81,10
+END
+
+IDD_WPAN_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WPAN_GPRS_Електромери"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "Всички",IDC_STATIC,756,7,43,12
+    LTEXT           "Избрания",IDC_STATIC,705,7,43,12
+    PUSHBUTTON      "Изпрати",IDC_BUTTON_SET1,702,23,52,18
+    PUSHBUTTON      "Прочети",IDC_BUTTON_GET1,702,47,52,18
+    PUSHBUTTON      "Чети MAC",IDC_BUTTON_GET_MAC1,702,71,52,18
+    PUSHBUTTON      "Изпрати",IDC_BUTTON_SET,755,23,52,18
+    PUSHBUTTON      "Прочети",IDC_BUTTON_GET,755,47,52,18
+    PUSHBUTTON      "Чети MAC",IDC_BUTTON_GET_MAC,755,71,52,18
+END
+
+IDD_TIMERS_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Таймери"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,351
+    PUSHBUTTON      "&Нов",IDC_BUTTON_NEW,757,10,50,14
+    PUSHBUTTON      "&Изтрий",IDC_BUTTON_DEL,757,29,50,14
+    EDITTEXT        IDC_LAT,698,73,45,15,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "Запазване и  изчисляване",IDC_CALCULATE,714,177,72,26,BS_MULTILINE
+    RTEXT           "XX:XX",IDC_SUNRISE,698,221,45,19,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    GROUPBOX        "Изгрев залез",IDC_STATIC,693,47,114,287
+    LTEXT           "Геогр.ширина",IDC_STATIC,698,57,64,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_LON,698,105,45,15,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Геогр.дължина",IDC_STATIC,698,89,64,14,SS_CENTERIMAGE
+    LTEXT           "Изгрев",IDC_STATIC,698,204,38,14,SS_CENTERIMAGE
+    RTEXT           "XX:XX",IDC_SUNSET,698,256,45,19,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    LTEXT           "Залез",IDC_STATIC,698,240,64,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_OFFSET_ONOFF,698,138,45,15,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Отместв. On/Off минути",IDC_STATIC,698,123,92,14,SS_CENTERIMAGE
+    CONTROL         "Автоматична настройка",IDC_CHECK_AUTO_ONOFF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,698,161,109,11
+    RTEXT           "XX:XX",IDC_SUNRISEOFFSET,752,221,45,19,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    LTEXT           "Отместени",IDC_STATIC,752,204,44,14,SS_CENTERIMAGE
+    RTEXT           "XX:XX",IDC_SUNSET_OFFSET,752,255,45,19,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    LTEXT           """Автоматична настройка"" понеделник, сряда и петък в 12 часа препрограмира on/off на всички рутери по първи таймер.",IDC_STATIC,700,279,101,52
+END
+
+IDD_ROUTER_TIMERS_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Таймери в рутерите"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "Всички",IDC_STATIC,756,7,43,12
+    LTEXT           "Избрания",IDC_STATIC,705,7,43,12
+    PUSHBUTTON      "Изпрати",IDC_BUTTON_SET1,702,23,52,18
+    PUSHBUTTON      "Прочети",IDC_BUTTON_GET1,702,47,52,18
+    PUSHBUTTON      "Изпрати",IDC_BUTTON_SET,755,23,52,18
+    PUSHBUTTON      "Прочети",IDC_BUTTON_GET,755,47,52,18
+END
+
+IDD_LAMP_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Улични осветители"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "MAC от файл",IDC_BUTTON_LOAD,721,309,86,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Рутери от файл",IDC_BUTTON_LOAD_ROUTERS,721,329,86,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Рутери от отказани",IDC_BUTTON_LOAD_ROUTERS_REJECT,721,349,86,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "&Изтрий",IDC_BUTTON_DEL,747,71,50,14
+    PUSHBUTTON      "&Нов",IDC_BUTTON_NEW,747,44,50,14
+    EDITTEXT        IDC_EDIT_NUMBER,768,25,29,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Осветител",IDC_STATIC,744,15,57,49
+    LTEXT           "№",IDC_STATIC,751,27,12,15
+    PUSHBUTTON      "Яркост",IDC_BUTTON_LIGHT1,729,193,50,14
+    EDITTEXT        IDC_EDIT_LIGHTS,729,176,50,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "Резултат",IDC_STATIC_SUCSES,711,217,86,14
+END
+
+IDD_DIALOG_DISBLED_LAMPS DIALOG 0, 0, 525, 295
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Отказани осветители"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Запиши като файл",ID_SAVE_DATA,435,7,83,14
+    PUSHBUTTON      "Изход",IDCANCEL,435,24,83,14
+    EDITTEXT        IDC_EDIT1,7,7,424,281,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_LAMP_GROUPS DIALOG 0, 0, 199, 271
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Групи за осветител"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Изход",IDCANCEL,142,250,50,14
+    CONTROL         "Група 1",IDC_DB_GROUP1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,20,54,16
+    CONTROL         "Група 2",IDC_DB_GROUP2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,35,54,16
+    CONTROL         "Група 3",IDC_DB_GROUP3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,50,54,16
+    CONTROL         "Група 4",IDC_DB_GROUP4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,65,54,16
+    CONTROL         "Група 5",IDC_DB_GROUP5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,80,54,16
+    CONTROL         "Група 6",IDC_DB_GROUP6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,95,54,16
+    CONTROL         "Група 7",IDC_DB_GROUP7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,110,54,16
+    CONTROL         "Група 8",IDC_DB_GROUP8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,125,54,16
+    CONTROL         "Група 9",IDC_DB_GROUP9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,140,54,16
+    CONTROL         "Група 10",IDC_DB_GROUP10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,155,54,16
+    CONTROL         "Група 11",IDC_DB_GROUP11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,170,54,16
+    CONTROL         "Група 12",IDC_DB_GROUP12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,185,54,16
+    CONTROL         "Група 13",IDC_DB_GROUP13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,200,54,16
+    CONTROL         "Група 14",IDC_DB_GROUP14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,215,54,16
+    CONTROL         "Група 15",IDC_DB_GROUP15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,230,54,16
+    CONTROL         "Група 16",IDC_DB_GROUP16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,245,54,16
+    PUSHBUTTON      "Чети от база данни",IDC_BUTTON_LOAD_DB,112,20,80,17
+    PUSHBUTTON      "Запиши в база данни",IDC_BUTTON_SAVE_DB,112,45,80,17
+    PUSHBUTTON      "Чети от осветител",IDC_BUTTON_LOAD_LAMP,112,110,80,17
+    PUSHBUTTON      "Запиши в осветител",IDC_BUTTON_SAVE_LAMP,112,135,80,17
+    CTEXT           "Резултат",IDC_STATIC_SUCSES,106,158,86,14
+END
+
+IDD_LAMP_IN_ROUTER_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Осветители в рутерите"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "Всички",IDC_STATIC,756,7,43,12
+    LTEXT           "Избрания",IDC_STATIC,705,7,43,12
+    PUSHBUTTON      "В мрежа",IDC_BUTTON_GET1,702,86,52,18
+    PUSHBUTTON      "В мрежа",IDC_BUTTON_GET,755,86,52,18
+    PUSHBUTTON      "Чети отказани",IDC_BUTTON_GET_REJECT1,702,145,52,18
+    PUSHBUTTON      "Програмиране",IDC_BUTTON_LAMPS_SET1,702,125,52,18
+    PUSHBUTTON      "Програмиране",IDC_BUTTON_LAMPS_SET,755,125,52,18
+    GROUPBOX        "Улични осветители",IDC_STATIC,699,74,108,129
+    PUSHBUTTON      "Чети статус",IDC_BUTTON_GET_LANPS_STATUS1,702,180,52,18
+    PUSHBUTTON      "Чети статус",IDC_BUTTON_GET_LANPS_STATUS,755,180,52,18
+    PUSHBUTTON      "Чети отказани",IDC_BUTTON_GET_REJECT,755,145,52,18
+    PUSHBUTTON      "Рутери от отказани",IDC_BUTTON_LOAD_ROUTERS_REJECT,721,350,86,14
+    PUSHBUTTON      "Прогр.RADIUS",IDC_BUTTON_SET1,702,23,52,18
+    PUSHBUTTON      "Прогр.RADIUS",IDC_BUTTON_SET,755,23,52,18
+END
+
+IDD_ROUTER_SELECT DIALOG 0, 0, 282, 321
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Избиране на рутер"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO2,7,6,208,308,CBS_SIMPLE | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Изпълни",IDOK,225,6,50,14
+    PUSHBUTTON      "Отказ",IDCANCEL,225,24,50,14
+END
+
+IDD_TYPE_LAMP_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Модели осветители"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "&Нов",IDC_BUTTON_NEW,757,10,50,14
+    PUSHBUTTON      "&Изтрий",IDC_BUTTON_DEL,757,29,50,14
+END
+
+IDD_ENRGY_METERS DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Електромери"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "Всички",-1,756,7,43,12
+    LTEXT           "Избрания",-1,705,7,43,12
+    PUSHBUTTON      "Енергия kWh",IDC_BUTTON_TOTAL1,702,41,52,18
+    PUSHBUTTON      "Мощност kW",IDC_BUTTON_CURRENT1,702,21,52,18
+    PUSHBUTTON      "Мощност kW",IDC_BUTTON_CURRENT,755,21,52,18
+    PUSHBUTTON      "История",IDC_BUTTON_HISTORY1,702,76,52,18
+    PUSHBUTTON      "История",IDC_BUTTON_GET_HISTORY,755,76,52,18
+    PUSHBUTTON      "Енергия kWh",IDC_BUTTON_TOTAL,755,41,52,18
+END
+
+IDD_DATE_TIME_LIMIT DIALOG 0, 0, 263, 83
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Времеви лимит"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Изпълни",IDOK,206,7,50,14
+    PUSHBUTTON      "Отказ",IDCANCEL,206,24,50,14
+    CONTROL         "DateTimePicker1",IDC_DATE_MIN,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,7,23,75,15
+    CONTROL         "DateTimePicker1",IDC_DATE_MAX,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,7,53,75,15
+    CONTROL         "DateTimePicker1",IDC_TIME_MIN,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_SHOWNONE | WS_TABSTOP | 0x8,99,23,75,15
+    CONTROL         "DateTimePicker1",IDC_TIME_MAX,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_SHOWNONE | WS_TABSTOP | 0x8,99,53,75,15
+    LTEXT           "> =",IDC_STATIC,7,8,40,14
+    LTEXT           "< =",IDC_STATIC,7,38,40,14
+END
+
+IDD_AUTO_ON_OFF DIALOG 0, 0, 260, 94
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Автоматична насройка On/Off"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "XX:XX",IDC_SUNRISEOFFSET,107,50,45,19,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    RTEXT           "XX:XX",IDC_SUNSET_OFFSET,107,20,45,19,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    LTEXT           "On",IDC_STATIC,76,26,25,14
+    LTEXT           "Off",IDC_STATIC,76,56,25,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,0,0,0
+ PRODUCTVERSION 4,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "StreetLights MFC Application"
+            VALUE "FileVersion", "4.0.0.0"
+            VALUE "InternalName", "StreetLights"
+            VALUE "LegalCopyright", "Copyright (C) 2010"
+            VALUE "OriginalFilename", "StreetLights.EXE"
+            VALUE "ProductName", "StreetLights"
+            VALUE "ProductVersion", "4.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_HARDWARE_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_PAGE_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_SELECT_OPERATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_NEW_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_PC_NUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_OPERATORS_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_NEW_OPERATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_WPAN_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_TIMERS_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 358
+    END
+
+    IDD_ROUTER_TIMERS_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_LAMP_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_DIALOG_DISBLED_LAMPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 518
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_LAMP_GROUPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_LAMP_IN_ROUTER_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_ROUTER_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 314
+    END
+
+    IDD_TYPE_LAMP_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_ENRGY_METERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_DATE_TIME_LIMIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_AUTO_ON_OFF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TV_Tracers.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_DECORI              "Декори %s"
+    IDS_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDS_ERROR               "Грешка"
+    IDS_ADDRESS1            "Нас.място"
+    IDS_ADDRESS2            "Адрес"
+    IDS_GPRS_ERRORS         "GPRS Err."
+    IDS_ON_OFF              "On/Off"
+    IDS_NUMBER              "№"
+    IDS_CHANNEL             "Channel"
+    IDS_PAN_ID              "Pan ID"
+    IDS_SEQURITY            "Sequrity key"
+    IDS_MAC_ADDRESS         "MAC адрес"
+    IDS_ON_OFF_POWER        "Захранване 1"
+    IDS_ON                  "On"
+    IDS_OFF                 "Off"
+    IDS_LIGHT               "Сила"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "StreetLights"
+    IDR_DISPENSERTYPE       "\nConnect"
+    IDR_TV_TRAC_DATA        "\nStreetLights\n\nStreetLights документи(*.slk)\n.slk\nStreetLights.Document\nStreetLights документ"
+    IDR_TV_TRAC_ACOUNT      "\nStreetLights\n\nStreetLights отчет(*.sld)\n.sld\nStreetLights.Account\nStreetLights отчет"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "StreetLights"
+    AFX_IDS_IDLEMESSAGE     "За помощ, натисни F1"
+    AFX_IDS_HELPMODEMESSAGE "Изберете обект за помощ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_SO         "Няма оператор"
+    ID_INDICATOR_LIM        "Декори 0.00m"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Създава нов документ\nНов"
+    ID_FILE_OPEN            "Отваря съществуващ документ\nОтвори"
+    ID_FILE_CLOSE           "Затваря активния документ\nЗатвори"
+    ID_FILE_SAVE            "Записва активния документ\nЗапиши"
+    ID_FILE_SAVE_AS         "Записва активния документ с ново име\nЗапиши като"
+    ID_FILE_PAGE_SETUP      "Променя настройките за изгледа на страницата\nНастройка на страница"
+    ID_FILE_PRINT_SETUP     "Променя настройките на принтера\nНастройки на прионтера"
+    ID_FILE_PRINT           "Отпечатва активния документ\nПечат"
+    ID_FILE_PRINT_PREVIEW   "Показва печаните страници\nВизуализация печат"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Показва информация за програмата, номера на версията и авторските права.\nЗа StreetLights..."
+    ID_APP_EXIT             "Затваря приложението; подканва ви да запишите документите.\nИзход"
+    ID_HELP_INDEX           "Показва списък с темите за помощ\nТеми за помощ"
+    ID_HELP_FINDER          "Показва списък с темите за помощ\nТеми за помощ"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Показва помощ при натискане на бутон, меню или прозорец\nПомощ"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Отвори този документ"
+    ID_FILE_MRU_FILE2       "Отвори този документ"
+    ID_FILE_MRU_FILE3       "Отвори този документ"
+    ID_FILE_MRU_FILE4       "Отвори този документ"
+    ID_FILE_MRU_FILE5       "Отвори този документ"
+    ID_FILE_MRU_FILE6       "Отвори този документ"
+    ID_FILE_MRU_FILE7       "Отвори този документ"
+    ID_FILE_MRU_FILE8       "Отвори този документ"
+    ID_FILE_MRU_FILE9       "Отвори този документ"
+    ID_FILE_MRU_FILE10      "Отвори този документ"
+    ID_FILE_MRU_FILE11      "Отвори този документ"
+    ID_FILE_MRU_FILE12      "Отвори този документ"
+    ID_FILE_MRU_FILE13      "Отвори този документ"
+    ID_FILE_MRU_FILE14      "Отвори този документ"
+    ID_FILE_MRU_FILE15      "Отвори този документ"
+    ID_FILE_MRU_FILE16      "Отвори този документ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Аранжира прозорците каскадно\nКаскадно"
+    ID_WINDOW_TILE_HORZ     "Аранжира прозорците без припокриване\nХоризонтално"
+    ID_WINDOW_TILE_VERT     "Аранжира прозорците без припокриване\nВертикално"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Показва или скрива линията с инструментите\nЛиния с инструменти"
+    ID_VIEW_STATUS_BAR      "Поакзва или скрива лентата на състоянието\nЛента на състоянието"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Сменя размера на прозореца"
+    AFX_IDS_SCMOVE          "Сменя позицията на прозореца"
+    AFX_IDS_SCMINIMIZE      "Намаля прозореца до икона"
+    AFX_IDS_SCMAXIMIZE      "Увеличава прозореца до пълен размер"
+    AFX_IDS_SCNEXTWINDOW    "Превключва на следващия документ"
+    AFX_IDS_SCPREVWINDOW    "Превключва на предишния документ"
+    AFX_IDS_SCCLOSE         "Затваря активния прозорец и пита за запис на документа"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Възстановява прозореца до нормален размер"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Активира този прозорец"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Затваря визуализацията на печата\nКрай визуализация печат"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ANOTHER_TRAKERS     "Стартирана е друга StreetLights"
+    IDS_PAGE_OF_PAGE        "Стр. %d от %d"
+    IDS_FILE_SAVE_AS_TEXT   "Текстови документи (*.txt)|*.txt|Всички документи (*.*)|*.*||"
+    IDS_FILE_SAVE_AS_SAPSAN "Текстови документи (*.txt)|*.txt|Всички документи (*.*)|*.*||"
+    IDS_ERR_HARWARE_UNKNOWN "COM%d: неизвестна грешка"
+    IDS_ERR_HARWARE_NOT_PRESENT "COM%d: не е инсталиран"
+    IDS_ERR_HARWARE_IS_BUSY "COM%d: е зает"
+    IDS_ERR_HARWARE_MORE_PROTOCOLS "Много устройства"
+    IDS_SOCKET_ERR          "TCP %s не може да установи връзка"
+    IDS_DEVICE_SETUP        "Настройка на рутери"
+    IDS_TEXT_EXIT           "Изход"
+    IDS_BUT_PRINT_PREVIEF   "&Виз.Печат"
+    IDS_BUT_PRINT           "&Печат"
+    IDS_BUT_UPDATE          "&Обнови"
+    IDS_HARDWARE            "IP адрес"
+    IDS_DELETE              "Изтриване:\t"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_PAGESETUP       "Променя настройките за изгледа на страницата\nНастройка на страница"
+    ID_DEVICE_SETUP         "Настройки на рутерите за връзка със осветителните тела\nНастройка на рутерите"
+    ID_STOP_ALL             "Настройки HOST\nНастройки HOST"
+    ID_PROGRAM_DEVICES      "Програмиране на контролерите (сервизен режим)\nСержизен режим"
+    ID_SELECT_ALL           "Всички устройства в група за сцена\nВсички в група"
+    ID_SELECT_DEVICE        "Избор на устройство по име F9\nИзбор на устройство F9"
+    ID_MOVE_UP_SLOW         "Power 1\nPower 1"
+    ID_MOVE_UP_FAST         "Power 85\nPower 85"
+    ID_MOVE_DOWN_FAST       "Power 170\nPower 170"
+    ID_MOVE_DOWN_SLOW       "Power 255\nPower 255"
+    ID_REPER                "OnOff time\nOnOff time"
+    ID_IN_POSITION          "Движение в зададена позиция\nВ позиция"
+    ID_IN_OFFSET_POSITION   "? SIM errors\n? SIM errors"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BUSY_IN_DEVICES     "%s е зает в осветителите"
+    IDS_HARDWARE_IS         "Хардуера %s вече е създаден"
+    IDS_TEST_VIEW           "Тестови прозорец"
+    IDS_NO_TEST_VIEV        "Без прозорец"
+    IDS_NO_DATA             "Без данните"
+    IDS_FULL_TEST           "Пълен тест"
+    IDS_STOP                "Разрешение"
+    IDS_WORK                "Включен"
+    IDS_NO_WORK             "Изключен"
+    IDS_NAME_IS             "Името %s е заето"
+    IDS_BUSY_IN_ACCOUNT     "%s е заето в отчетите"
+    IDS_ADDRESS             "Адрес"
+    IDS_DEVICE              "Устройство"
+    IDS_NO_CONNECT          "ВРЪЗКА"
+    IDS_PROGRAM_OK          "Успешно програмиране"
+    IDS_PROGRAM_ERR         "НЕУСПЕШНО ПРОГРАМИРАНЕ !!!"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_AC_ERR              "AC грешка"
+    IDS_AC_OK               "AC в готовност"
+    IDS_LIMIT_UP            "Горен лимит"
+    IDS_LIMIT_DOWN          "Долен лимит"
+    IDS_LIMIT_SOFT          "Прогр. лимит"
+    IDS_LIMIT_NO            "Няма задействан лимит"
+    IDS_ERR_VAGE            "Оплетено въже"
+    IDS_LOCAL_UP            "Локално нагоре"
+    IDS_LOCAL_DOWN          "Локално надолу"
+    IDS_LOCAL_NO            "Няма локално движеение"
+    IDS_MOVE_UP             "Нагоре"
+    IDS_MOVE_DOWN           "Надолу"
+    IDS_VERSION             "Версия"
+    IDS_SUCSES              "Успех"
+    IDS_HELP1               "Забележка 1"
+    IDS_HELP2               "Забележка 2"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NAME                "Име"
+    IDS_CLEAR_RAM           "Нулирана RAM"
+    IDS_OFFSET              "Отместване метри"
+    IDS_MIN                 "Долен лимит метри"
+    IDS_MAX                 "Горен лимит метри"
+    IDS_LIMITS              "Отместване и лимити"
+    IDS_ERR_REMAK           "Приплъзващ ремък"
+    IDS_NO_SCENE            "Няма избрани за сцена"
+    IDS_SAVE_TRACERS        "StreetLights документи(*.slk)|*.trk|Всички документи (*.*)|*.*||"
+    IDS_NO_DEVICE           "Не е открито устройсво с име %s"
+    IDS_UNTITLED            "Неименуван"
+    IDS_UNKNOV_DATA_BASE    "Неизвестна версия на база данни:%d.%.2d"
+    IDS_NOT_OPERATOR        "Няма оператор"
+    IDS_NOT_OPERATORS_INF   "Няма информация за оператора"
+    IDS_NOT_PASSWORD        "Некоректна парола"
+    IDS_UNKNOW_OPERATOR_NAME "Неизвестен оператор"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ENABLE_MOVE          "Разрешава преместването прозорците на устройстват\nРазрешено местене"
+    ID_REPER_ALL            "Задвижва избраните устройсрва до горен репер за обновяване на позицията\nВсички в репер"
+    ID_GO_DOWN_ALL          "Задвижва избраните устройсрва до долно положение\nВсички долу"
+    ID_SELECT               "Включи релето\nВключи релето"
+    ID_DESELECT             "Изключи релето\nИзключи релето"
+    ID_IN_STORED_ONE        "Избраното устройство в запомнена позиция от сцена\nИзбрания в запомнена позиция"
+    ID_IN_STORED_ALL        "Изпълни запомнената сцена\nИзпълни сцената"
+    ID_SELECT_OPERATOR      "Смяна на дежурния оператор\nСмяна на оператор"
+    ID_COBFIG_OPERATOR      "Настройка на операторите\nОпрератори"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SELECT_PC            "Смяна номера на работното място\nНомер работно място"
+    ID_CONFIG_DB            "Настройва връзката с база данни\nВръзка с база данни"
+    ID_ACCOUNTS_SYSTEM      "Отчет на събитията в системата."
+    ID_ACCOUNTS_DEVICES     "Отчет на устройствата"
+    ID_ACCOUNTS_ONE_DEVICE  "Отчет на избрано устройство"
+    ID_ACCOUNTS_CLEAR       "Изтриване  на отчетите"
+    ID_GO_UP_ALL            "Задвижва избраните устройсрва до горно положение\nВсички горе"
+    ID_DESELECT_ALL         "Всички устройства извън група за сцена\nРазгрупира всички"
+    ID_CHANGE_DECORY        "Задава височината на декорите\nВисочина декори"
+    ID_LAMPS_SETUP          "Настройки на уличните осветители\nНастройка на уличните осветитело"
+    ID_TEST_LQI             "Тестване на WPAN  мрежата\nТестване на връзката"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PRIVILEGI           "Правомощия"
+    IDS_SERVIZ              "Сервизни"
+    IDS_ADMIN               "Административни"
+    IDS_OPER                "Операторски"
+    IDS_CURRENT_OPERATOR    "Работещия оператор не може да бъде изтрит !"
+    IDS_NOT_CONFIRM_PASSWORD "Паролата не съвпада"
+    IDS_NOT_PASSWORD_ADD    "Няма парола"
+    IDS_NOT_NAME            "Няма име"
+    IDS_SYSTEM_ACCOUNT_NAME1 "Отчет на системни събития"
+    IDS_OPERATOR            "Оператор"
+    IDS_DATETIME            "Време"
+    IDS_SYSTEM_TYPE         "Системно събитие"
+    IDS_SYSTEM_UNKNOW       "Неизвестно събитие !!!"
+    IDS_CONFIG_LAMPS        "Промяна на улични осветители"
+    IDS_CONFIG_OPERATORS    "Промяна на операторите"
+    IDS_CONFIG_ROUTERS      "Промяна на рутерите"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CONFIG_LIMITS       "Промяна на лимитите"
+    IDS_CONFIG_PC_NUMBER    "Промяна номера на работното място"
+    IDS_CONFIG_CONNECT      "Промяна връзката с база данни"
+    IDS_SYSTEM_ACCOUNT_NAME "SA"
+    IDS_NUMBER_PC           "№ PC"
+    IDS_DEVICE_ACCOUNT_NAME1 "Отчет на устройствата"
+    IDS_DEVICE_ACCOUNT_NAME "DA"
+    IDS_METRI               "Метри"
+    IDS_DEVICE_TYPE         "Събитие в устройството"
+    IDS_NONE                "Край на събитието"
+    IDS_MOVE_UP_FAST        "Нагоре бързо"
+    IDS_MOVE_DOWN_FAST      "Надолу бързо"
+    IDS_GO_REPER            "В репер"
+    IDS_GO_POS              "В позиция"
+    IDS_DELETE_ACCOUTS      "Уверени ли сте че искате да изтриете отчетите ?"
+    IDS_CLEAR_ACCOUNTS      "Изтриване на отчетите"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_GROUP               "Група %d"
+    IDS_BUSY_IN_RUTERS      "Зает  е в рутерите"
+    IDS_TIMERS              "Таймери"
+    IDS_RADIUS              "RADIUS"
+    IDS_LAMPS               "Ул.освет."
+    IDS_LAMPS_CONNECTED     "В мрежа"
+    IDS_REJECTED            "Отказани осветители:"
+    IDS_ROUTER              "Рутер"
+    IDS_LAST_CONTACT        "Последна връзка"
+    IDS_WORK_HOURS          "Раб.часове"
+    IDS_STREET              "Улица"
+    IDS_STREET_NUMBER       "№ в улицата"
+    IDS_STREET_LAMPS        "Настройка на осветители"
+    IDS_DIABLED_LAMP_L1     "Рутер\tРутер\tЛампа\tРаб.\tВидяна\t\tПроверявана\tMAC\r\n"
+    IDS_DIABLED_LAMP_L2     "отказ.\tпрогр.\t№\tчасове\t\t\t\t\tадрес\r\n"
+    IDS_FILE_SAVE_AS        "Text Files (*.txt)|*.txt|All Files (*.*)|*.*||"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LAST_TEST           "Проверена"
+    IDS_PERCENT_CONNECTED   "Проверени осветители %u, свързани %u  %% %.2lf"
+    IDS_NUMBER_IS_BUSY      "№ %u е зает !"
+    IDS_BAD_MAC             "Грешен MAC адрес !"
+    IDS_GROUPS              "Група таймери"
+    IDS_NO_RUTER            "Няма рутер !"
+    IDS_NO_HARDWARE         "Няма хардуер !"
+    IDS_NO_LAMP             "Не е свързана !"
+    IDS_TIME_ON_ROUTER      "Рутера е включен"
+    IDS_TIME_OFF_ROUTER     "Рутера е изключен"
+    IDS_CSQ                 "CSQ"
+    IDS_STATE               "State"
+    IDS_RELAY               "Реле"
+    IDS_TIME_ON             "Включване"
+    IDS_TIME_OFF            "Изключване"
+    IDS_TEST_LQI1           "Тест LQI рутер : %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TEST_LQI            "LQI_%d"
+    IDS_LQI                 "LQI"
+    IDS_PER                 "PER%"
+    IDS_PARENT              "Рутер / Предходен осветител"
+    IDS_CHILDREN            "Следващ осветител"
+    IDS_DEPTH               "Ниво"
+    IDS_LAT                 "Геогр.ширина"
+    IDS_LNG                 "Геогр.дължина"
+    IDS_TYPE_LAMP           "Модел осв."
+    IDS_LABEL               "Забележка"
+    IDS_ON_OFF_POWER2       "Захранване 2"
+    IDS_MY_IP               "Моето IP е: ""%s"""
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CONFIG_ENERGY_METERS "Промени в електромерите"
+    IDS_CURRENT_ENERGY      "Мощност\tРутер:\t%s\t%s\t% 4d лампи\t% 6.3f kW\r\n"
+    IDS_CURRENT_ENERGY1     "Честота                     \tHz\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY2     "Напрежение              \tV\t                \t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY3     "Ток                             \tA\t                \t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY4     "Активна мощност     \tkW\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY5     "Реактивна мощност \tkvar\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY6     "Приведена мощност\tkVA\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CURRENT_ENERGY7     "Косинус фактор        \t\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY_NAME "Енергия"
+    IDS_CURRENT_ENERGY_FILE "Енаргия_"
+    IDS_TOTAL_CALCULATED    "Изчислени суми \t% 4d лампи\t% 6.3f kW\r\n"
+    IDS_CURRENT_ENERGY8     "Активна мощност     \tkW\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY9     "Реактивна мощност \tkvar\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY10    "Приведена мощност \tkVA\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY        "Енергия\tРутер:\t%s\t%s\t% 4d лампи\t% 6.3f kW\r\n"
+    IDS_TOTAL_ENERGY1       "Активна енергия,T1,T2          \tkWh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY2       "Активна енергия L1,L2,L3     \tkWh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY3       "Реактивна енергия,T1,T2     \tkvarh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TOTAL_ENERGY4       "Реактивна енергия L1,L2,L3 \tkvarh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY_NAME   "Енергия"
+    IDS_TOTAL_ENERGY_FILE   "Енергия_"
+    IDS_HISTORY_ENERGY      "История на мощността\tРутер:\t%s\t%s\t% 4d лампи\t% 6.3f kW\r\n"
+    IDS_HISTORY_ENERGY1     "Датаи час           Енергия kW    \tСума         \tL1            \tL2            \tL3\r\n"
+    IDS_HISTORY_ENERGY2     "%s\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_HISTORY_ENERGY_NAME "Исория мощност"
+    IDS_HISTORY_ENERGY_FILE "ИсторияМощност_"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TOTAL               "Брой\t\t\t\t\t%d\r\n"
+    IDS_RESER_SIM           "GPRS off/on"
+    IDS_HOST_VERSION        "HOST Ver."
+    IDS_JENNIC_VERSION      "COOR Ver."
+    IDS_POWER_W             "Мощност W"
+    IDS_WPAN                "WPAN"
+    IDS_RESET_GPRS          "Презапуск GPRS"
+    IDS_HOUR                "часове"
+    IDS_MINUTE              "минути"
+    IDS_ENERGY_METER        "Електормер"
+END
+
+#endif    // Bulgarian (Bulgaria) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "О&ткрыть...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "З&акрыть",                    ID_FILE_CLOSE
+        MENUITEM "&Сохранить\tCtrl+S",          ID_FILE_SAVE
+        MENUITEM "С&охранить как...",           ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Печать...\tCtrl+P",          ID_FILE_PRINT
+        MENUITEM "Прос&мотр печати",            ID_FILE_PRINT_PREVIEW
+        MENUITEM "Свойства п&ринтера...",       ID_FILE_PRINT_SETUP
+        MENUITEM "Парам&етры страницы",         ID_FILE_PAGESETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Пос&ледний использованный файл", ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Выход\tAlt+F4",              ID_APP_EXIT
+    END
+    POPUP "&Вид"
+    BEGIN
+        MENUITEM "С&трока инструментов",        ID_VIEW_TOOLBAR
+        MENUITEM "&Строка состояния",           ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Настройки"
+    BEGIN
+        MENUITEM "&Концентратор",               ID_DEVICE_SETUP
+        MENUITEM "&Уличный светильник",         ID_LAMPS_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Операторы",                  ID_COBFIG_OPERATOR
+        MENUITEM "&Номер рабочего места",       ID_SELECT_PC
+        MENUITEM "&Соединено с базой данных",   ID_CONFIG_DB
+    END
+    POPUP "&Управление"
+    BEGIN
+        MENUITEM "&Смена оператора",            ID_SELECT_OPERATOR
+    END
+    POPUP "&Отчеты"
+    BEGIN
+        MENUITEM "&Системы",                    ID_ACCOUNTS_SYSTEM
+        MENUITEM SEPARATOR
+        MENUITEM "&Тест LQI",                   ID_TEST_LQI
+        MENUITEM "&Удаление отчётов",           ID_ACCOUNTS_CLEAR
+    END
+    POPUP "О&кна"
+    BEGIN
+        MENUITEM "&Каскадом",                   ID_WINDOW_CASCADE
+        MENUITEM "&Горизонтально",              ID_WINDOW_TILE_HORZ
+        MENUITEM "&Вертикально",                ID_WINDOW_TILE_VERT
+    END
+    POPUP "&Помощь"
+    BEGIN
+        MENUITEM "&Разделы справки",            ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&О StreetLights...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\bmp00004.bmp"
+IDB_BITMAP_VAHS         BITMAP                  "res\\bmp00005.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 32, 32
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_DEVICE_SETUP
+    BUTTON      ID_LAMPS_SETUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_DISPENSERTYPE       ICON                    "res\\ico00005.ico"
+IDR_MAINFRAME           ICON                    "res\\ico00006.ico"
+IDR_TV_TRAC_ACOUNT      ICON                    "res\\ico00007.ico"
+IDR_TV_TRAC_DATA        ICON                    "res\\ico00008.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F10,         ID_STOP_ALL,            VIRTKEY, NOINVERT
+    VK_F4,          ID_APP_EXIT,            VIRTKEY, ALT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F9,          ID_SELECT_DEVICE,       VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 280, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About StreetLights"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "StreetLights Copyright (C) 2015",IDC_STATIC,7,61,119,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,223,84,50,14,WS_GROUP
+    LTEXT           "Версия БД  ",IDC_STATIC_VERSION_DB,7,88,90,10
+    LTEXT           "Версия         ",IDC_STATIC_VERSION,7,75,90,10
+    CONTROL         IDB_BITMAP_VAHS,IDC_STATIC,"Static",SS_BITMAP,7,7,379,139
+END
+
+IDD_DIALOG_DISBLED_LAMPS DIALOG 0, 0, 525, 295
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Отмена светильников"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Сохранить как файл",ID_SAVE_DATA,435,7,83,14
+    PUSHBUTTON      "Выход",IDCANCEL,435,24,83,14
+    EDITTEXT        IDC_EDIT1,7,7,424,281,ES_MULTILINE | ES_UPPERCASE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_HARDWARE_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Концентраторы"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "&Новый",IDC_BUTTON_NEW,757,77,50,14
+    PUSHBUTTON      "&Удалить",IDC_BUTTON_DEL,757,103,50,14
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,699,63,100,15
+    LTEXT           "IP адресс",IDC_STATIC,699,47,100,14
+    PUSHBUTTON      "Тест GPRS",IDC_BUTTON_TEST,763,156,44,22
+    PUSHBUTTON      "Hardware from file",IDC_BUTTON_LOAD,699,95,51,21,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Включить",IDC_BUTTON_ON,763,182,44,22
+    PUSHBUTTON      "Выключить",IDC_BUTTON_OFF,763,210,44,22
+    PUSHBUTTON      "Яркость",IDC_BUTTON_LIGHT,763,269,44,22
+    PUSHBUTTON      "Тест GPRS",IDC_BUTTON_TEST1,701,156,44,22
+    PUSHBUTTON      "Включить",IDC_BUTTON_ON1,701,183,44,22
+    PUSHBUTTON      "Выключить",IDC_BUTTON_OFF1,701,210,44,22
+    PUSHBUTTON      "Яркость",IDC_BUTTON_LIGHT1,701,269,44,22
+    LTEXT           "Все",IDC_STATIC,764,139,43,12
+    LTEXT           "Выбранный",IDC_STATIC,703,139,43,12
+    EDITTEXT        IDC_EDIT_LIGHTS,731,250,45,15,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUMBER,768,25,29,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "№",IDC_STATIC,751,27,12,15
+    GROUPBOX        "Концентратор",IDC_STATIC,696,17,111,78
+    PUSHBUTTON      "Обнулить RAM",IDC_BUTTON_CLEAR_RAM1,702,324,52,18
+    PUSHBUTTON      "Обнулить RAM",IDC_BUTTON_CLEAR_RAM,755,324,52,18
+END
+
+IDD_LAMP_GROUPS DIALOG 0, 0, 199, 271
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Группы светильников"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Выход",IDCANCEL,142,250,50,14
+    CONTROL         "Группа 1",IDC_DB_GROUP1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,20,54,16
+    CONTROL         "Группа 2",IDC_DB_GROUP2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,35,54,16
+    CONTROL         "Группа 3",IDC_DB_GROUP3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,50,54,16
+    CONTROL         "Группа 4",IDC_DB_GROUP4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,65,54,16
+    CONTROL         "Группа 5",IDC_DB_GROUP5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,80,54,16
+    CONTROL         "Группа 6",IDC_DB_GROUP6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,95,54,16
+    CONTROL         "Группа 7",IDC_DB_GROUP7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,110,54,16
+    CONTROL         "Группа 8",IDC_DB_GROUP8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,125,54,16
+    CONTROL         "Группа 9",IDC_DB_GROUP9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,140,54,16
+    CONTROL         "Группа 10",IDC_DB_GROUP10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,155,54,16
+    CONTROL         "Группа 11",IDC_DB_GROUP11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,170,54,16
+    CONTROL         "Группа 12",IDC_DB_GROUP12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,185,54,16
+    CONTROL         "Группа 13",IDC_DB_GROUP13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,200,54,16
+    CONTROL         "Группа 14",IDC_DB_GROUP14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,215,54,16
+    CONTROL         "Группа 15",IDC_DB_GROUP15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,230,54,16
+    CONTROL         "Группа 16",IDC_DB_GROUP16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,245,54,16
+    PUSHBUTTON      "Чтение из базы данных",IDC_BUTTON_LOAD_DB,112,20,80,17
+    PUSHBUTTON      "Записать в базу данных",IDC_BUTTON_SAVE_DB,112,45,80,17
+    PUSHBUTTON      "Считать со светильника",IDC_BUTTON_LOAD_LAMP,112,110,80,17
+    PUSHBUTTON      "Записать в светильник",IDC_BUTTON_SAVE_LAMP,112,135,80,17
+    CTEXT           "Результат",IDC_STATIC_SUCSES,106,158,86,14
+END
+
+IDD_LAMP_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Уличные светильники"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "MAC из файла",IDC_BUTTON_LOAD,721,309,86,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Концентратор из файла",IDC_BUTTON_LOAD_ROUTERS,721,329,86,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Отмена концентраторов",IDC_BUTTON_LOAD_ROUTERS_REJECT,721,349,86,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "&Удалить",IDC_BUTTON_DEL,747,71,50,14
+    PUSHBUTTON      "&Новый",IDC_BUTTON_NEW,747,44,50,14
+    EDITTEXT        IDC_EDIT_NUMBER,768,25,29,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Светильник",IDC_STATIC,744,15,57,49
+    LTEXT           "№",IDC_STATIC,751,27,12,15
+    PUSHBUTTON      "Яркость",IDC_BUTTON_LIGHT1,729,193,50,14
+    EDITTEXT        IDC_EDIT_LIGHTS,729,176,50,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "Результат",IDC_STATIC_SUCSES,711,217,86,14
+END
+
+IDD_NEW_NAME DIALOG 0, 0, 186, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Введите имя"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,7,7,112,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Выполнить",IDOK,129,7,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,129,24,50,14
+END
+
+IDD_NEW_OPERATOR DIALOG 0, 0, 199, 118
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Нов оператор"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,7,23,125,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSORD,7,57,125,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONFIRM_PASSWORD,8,92,125,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Выполнить",IDOK,142,7,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,142,24,50,14
+    LTEXT           "Имя",IDC_STATIC,7,9,84,10
+    LTEXT           "Пароль",IDC_STATIC,7,43,84,10
+    LTEXT           "Повторить пароль",IDC_STATIC,8,79,81,10
+END
+
+IDD_OPERATORS_SETUP DIALOG 0, 0, 261, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Операторы"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,190,160
+    PUSHBUTTON      "&Новый",IDC_BUTTON_NEW,204,7,50,14
+    PUSHBUTTON      "&Удалить",IDC_BUTTON_DEL,204,25,50,14
+    PUSHBUTTON      "&Вид.Печати",IDC_BUTTON_PRINT_PREVIEV,204,76,50,14
+    PUSHBUTTON      "&Печать",IDC_BUTTON_PRINT,204,93,50,14
+    PUSHBUTTON      "Выход",IDCANCEL,204,161,50,14
+END
+
+IDD_PAGE_SETUP DIALOG 0, 0, 244, 93
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Настройки печати страницы"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_LEFT,56,20,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_RIGHT,136,20,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_TOP,56,42,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BOTTOM,136,43,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Таблица на одной странице",IDC_CHECK_FIT_PAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,69,114,12
+    DEFPUSHBUTTON   "Выполнить",IDOK,187,7,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,187,24,50,14
+    LTEXT           "Левее:",IDC_STATIC,18,20,31,12
+    LTEXT           "Вверх:",IDC_STATIC,18,42,31,12
+    LTEXT           "Вправо:",IDC_STATIC,98,20,31,12
+    LTEXT           "Вниз",IDC_STATIC,98,43,31,12
+    GROUPBOX        "Переместить [mm]",IDC_STATIC,7,7,173,57
+    CONTROL         "Чёрно-белое",IDC_BLACK_WITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,136,69,56,13
+END
+
+IDD_PC_NUMBER DIALOG 0, 0, 186, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Введите номер рабочего места"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NUMBER,7,7,112,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Выполнить",IDOK,129,7,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,129,24,50,14
+    LTEXT           "Рабочие места должны иметь разные номера для отчетности.",IDC_STATIC,7,28,114,21
+END
+
+IDD_ROUTER_SELECT DIALOG 0, 0, 282, 321
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Выбрать концентратор"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO2,7,6,208,308,CBS_SIMPLE | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Выполнить",IDOK,225,6,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,225,24,50,14
+END
+
+IDD_ROUTER_TIMERS_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Таймеры в концентраторах"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "Все",IDC_STATIC,756,7,43,12
+    LTEXT           "Выбранный",IDC_STATIC,705,7,43,12
+    PUSHBUTTON      "Послать",IDC_BUTTON_SET1,702,23,52,18
+    PUSHBUTTON      "Прочесть",IDC_BUTTON_GET1,702,47,52,18
+    PUSHBUTTON      "Послать",IDC_BUTTON_SET,755,23,52,18
+    PUSHBUTTON      "Прочесть",IDC_BUTTON_GET,755,47,52,18
+END
+
+IDD_SELECT_OPERATOR DIALOG 0, 0, 186, 91
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Выбор оператора"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_NAME,7,22,112,55,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PASSWORD,7,70,112,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Выполнить",IDOK,129,7,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,129,24,50,14
+    LTEXT           "Имя",IDC_STATIC,7,7,22,12
+    LTEXT           "Пароль",IDC_STATIC,7,57,64,10
+END
+
+IDD_TIMERS_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Таймеры"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "&Новый",IDC_BUTTON_NEW,757,10,50,14
+    PUSHBUTTON      "&Удалить",IDC_BUTTON_DEL,757,29,50,14
+    EDITTEXT        IDC_LAT,718,76,65,15,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "Рассчитать",IDC_CALCULATE,718,128,65,20
+    RTEXT           "XX:XX",IDC_SUNRISE,718,173,65,19,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    GROUPBOX        "Восход закат",IDC_STATIC,707,51,85,184
+    LTEXT           "Координата с.ш.",IDC_STATIC,718,61,64,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_LON,718,108,65,15,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Координата в.д.",IDC_STATIC,718,93,64,14,SS_CENTERIMAGE
+    LTEXT           "Восход",IDC_STATIC,718,156,64,14,SS_CENTERIMAGE
+    RTEXT           "XX:XX",IDC_SUNSET,718,208,65,19,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    LTEXT           "Закат",IDC_STATIC,718,192,64,14,SS_CENTERIMAGE
+END
+
+IDD_WPAN_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WPAN_GPRS_Energy Meters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "Всё",IDC_STATIC,756,7,43,12
+    LTEXT           "Выбрать",IDC_STATIC,705,7,43,12
+    PUSHBUTTON      "Послать",IDC_BUTTON_SET1,702,23,52,18
+    PUSHBUTTON      "Прочесть",IDC_BUTTON_GET1,702,47,52,18
+    PUSHBUTTON      "Считать MAC",IDC_BUTTON_GET_MAC1,702,71,52,18
+    PUSHBUTTON      "Послать",IDC_BUTTON_SET,755,23,52,18
+    PUSHBUTTON      "Прочесть",IDC_BUTTON_GET,755,47,52,18
+    PUSHBUTTON      "Считать MAC",IDC_BUTTON_GET_MAC,755,71,52,18
+END
+
+IDD_LAMP_IN_ROUTER_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Светильники в концент"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "Все",IDC_STATIC,756,7,43,12
+    LTEXT           "Выбранный",IDC_STATIC,705,7,43,12
+    PUSHBUTTON      "В сети",IDC_BUTTON_GET1,702,86,52,18
+    PUSHBUTTON      "В сети",IDC_BUTTON_GET,755,86,52,18
+    PUSHBUTTON      "Чужой св.",IDC_BUTTON_GET_REJECT1,702,145,52,18
+    PUSHBUTTON      "Программ",IDC_BUTTON_LAMPS_SET1,702,125,52,18
+    PUSHBUTTON      "Программ",IDC_BUTTON_LAMPS_SET,755,125,52,18
+    GROUPBOX        "Уличный светильник",IDC_STATIC,699,74,108,129
+    PUSHBUTTON      "Статус",IDC_BUTTON_GET_LANPS_STATUS1,702,180,52,18
+    PUSHBUTTON      "Статус",IDC_BUTTON_GET_LANPS_STATUS,755,180,52,18
+    PUSHBUTTON      "Чужой св.",IDC_BUTTON_GET_REJECT,755,145,52,18
+    PUSHBUTTON      "Открыть отказы",IDC_BUTTON_LOAD_ROUTERS_REJECT,721,350,86,14
+    PUSHBUTTON      "Прог.RADIUS",IDC_BUTTON_SET1,702,23,52,18
+    PUSHBUTTON      "Прог.RADIUS",IDC_BUTTON_SET,755,23,52,18
+END
+
+IDD_TYPE_LAMP_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Тип светилники"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "&Новый",IDC_BUTTON_NEW,757,10,50,14
+    PUSHBUTTON      "&Удалить",IDC_BUTTON_DEL,757,29,50,14
+END
+
+IDD_ENRGY_METERS DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Energy Meters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "All",-1,756,7,43,12
+    LTEXT           "Selected",-1,705,7,43,12
+    PUSHBUTTON      "Total",IDC_BUTTON_TOTAL1,702,41,52,18
+    PUSHBUTTON      "Current",IDC_BUTTON_CURRENT1,702,21,52,18
+    PUSHBUTTON      "Curent",IDC_BUTTON_CURRENT,755,21,52,18
+    PUSHBUTTON      "History",IDC_BUTTON_HISTORY1,702,76,52,18
+    PUSHBUTTON      "History",IDC_BUTTON_GET_HISTORY,755,76,52,18
+    PUSHBUTTON      "Total",IDC_BUTTON_TOTAL,755,41,52,18
+END
+
+IDD_DATE_TIME_LIMIT DIALOG 0, 0, 263, 83
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Date and Time Limits"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,206,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,206,24,50,14
+    CONTROL         "DateTimePicker1",IDC_DATE_MIN,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,7,23,75,15
+    CONTROL         "DateTimePicker1",IDC_DATE_MAX,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,7,53,75,15
+    CONTROL         "DateTimePicker1",IDC_TIME_MIN,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_SHOWNONE | WS_TABSTOP | 0x8,99,23,75,15
+    CONTROL         "DateTimePicker1",IDC_TIME_MAX,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_SHOWNONE | WS_TABSTOP | 0x8,99,53,75,15
+    LTEXT           "> =",IDC_STATIC,7,8,40,14
+    LTEXT           "< =",IDC_STATIC,7,38,40,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,0,0,0
+ PRODUCTVERSION 4,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "StreetLights MFC Application"
+            VALUE "FileVersion", "4.0.0.0"
+            VALUE "InternalName", "StreetLights"
+            VALUE "LegalCopyright", "Copyright (C) 2015"
+            VALUE "OriginalFilename", "StreetLights.EXE"
+            VALUE "ProductName", "StreetLights"
+            VALUE "ProductVersion", "4.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_DIALOG_DISBLED_LAMPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 518
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_HARDWARE_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_LAMP_GROUPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_LAMP_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_NEW_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_NEW_OPERATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_OPERATORS_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_PAGE_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_PC_NUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_ROUTER_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 314
+    END
+
+    IDD_ROUTER_TIMERS_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_SELECT_OPERATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_TIMERS_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_WPAN_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_LAMP_IN_ROUTER_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_TYPE_LAMP_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_ENRGY_METERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_DATE_TIME_LIMIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_DECORI              "Декори %s"
+    IDS_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDS_ERROR               "Ошибка"
+    IDS_ADDRESS1            "Название места"
+    IDS_ADDRESS2            "Адресс"
+    IDS_GPRS_ERRORS         "GPRS Err."
+    IDS_ON_OFF              "On/Off"
+    IDS_NUMBER              "№"
+    IDS_CHANNEL             "Канал"
+    IDS_PAN_ID              "Pan ID"
+    IDS_SEQURITY            "Секретный ключ"
+    IDS_MAC_ADDRESS         "MAC адресс"
+    IDS_ON_OFF_POWER        "Питание 1"
+    IDS_ON                  "On"
+    IDS_OFF                 "Off"
+    IDS_LIGHT               "Сила"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "StreetLights"
+    IDR_DISPENSERTYPE       "\nConnect"
+    IDR_TV_TRAC_DATA        "\nStreetLights\n\nStreetLights документи(*.slk)\n.slk\nStreetLights.Document\nStreetLights документ"
+    IDR_TV_TRAC_ACOUNT      "\nStreetLights\n\nStreetLights отчет(*.sld)\n.sld\nStreetLights.Account\nStreetLights отчет"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "StreetLights"
+    AFX_IDS_IDLEMESSAGE     "Для справки, нажми F1"
+    AFX_IDS_HELPMODEMESSAGE "Выбери объект для справки"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_SO         "Нет оператора"
+    ID_INDICATOR_LIM        "Декори 0.00m"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Создать нов документ\nНов"
+    ID_FILE_OPEN            "Открыть существующий документ\nОткрыть"
+    ID_FILE_CLOSE           "Закрыть активный документ\nЗакрыть"
+    ID_FILE_SAVE            "Сохранить активный документ\nСохранить"
+    ID_FILE_SAVE_AS         "Сохранить активный документ с новым именем\nСохранить как"
+    ID_FILE_PAGE_SETUP      "Изменить настройки просмотра страницы\nНастройка страницы"
+    ID_FILE_PRINT_SETUP     "Изменить настройки принтера\nНастройки принтера"
+    ID_FILE_PRINT           "Распечатать активный документ\nПечать"
+    ID_FILE_PRINT_PREVIEW   "Показать печать страницы\nВизуализация печати"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Показать информацию о программе, номер версии и авторские права.\nЗа StreetLights..."
+    ID_APP_EXIT             "Закрыть приложение; Предложить сохранить документ.\nВыход"
+    ID_HELP_INDEX           "Показать список с разделами справки\nРазделы справки"
+    ID_HELP_FINDER          "Показать список с разделами справки\nРазделы справки"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Показать справку при нажатии кнопки, меню или окно\nСправка"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Открыть документ"
+    ID_FILE_MRU_FILE2       "Открыть документ"
+    ID_FILE_MRU_FILE3       "Открыть документ"
+    ID_FILE_MRU_FILE4       "Открыть документ"
+    ID_FILE_MRU_FILE5       "Открыть документ"
+    ID_FILE_MRU_FILE6       "Открыть документ"
+    ID_FILE_MRU_FILE7       "Открыть документ"
+    ID_FILE_MRU_FILE8       "Открыть документ"
+    ID_FILE_MRU_FILE9       "Открыть документ"
+    ID_FILE_MRU_FILE10      "Открыть документ"
+    ID_FILE_MRU_FILE11      "Открыть документ"
+    ID_FILE_MRU_FILE12      "Открыть документ"
+    ID_FILE_MRU_FILE13      "Открыть документ"
+    ID_FILE_MRU_FILE14      "Открыть документ"
+    ID_FILE_MRU_FILE15      "Открыть документ"
+    ID_FILE_MRU_FILE16      "Открыть документ"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Сортировать окна каскадом\nКаскад"
+    ID_WINDOW_TILE_HORZ     "Сортировать окна без перекрытия\nГоризонтально"
+    ID_WINDOW_TILE_VERT     "Сортировать окна без перекрытия\nВертикально"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Показать или скрыть ленту инструментов\nЛента инструментов"
+    ID_VIEW_STATUS_BAR      "Показать или скрыть ленту состояния\nЛента состояния"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Изменить размера окна"
+    AFX_IDS_SCMOVE          "Изменить положение окна"
+    AFX_IDS_SCMINIMIZE      "Уменишить окно до иконки"
+    AFX_IDS_SCMAXIMIZE      "Увеличить окно до полного размера"
+    AFX_IDS_SCNEXTWINDOW    "Перейти к следующему документу"
+    AFX_IDS_SCPREVWINDOW    "Перейти к предыдущему документу"
+    AFX_IDS_SCCLOSE         "Закрыть активное окно и попросить сохранить документ"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Восстановить окно до нормального размера"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Активировать это окно"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Закрыть просмотр печати\nКонец просмотра печати"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ANOTHER_TRAKERS     "Программа уже загружена !!!"
+    IDS_PAGE_OF_PAGE        "Стр. %d от %d"
+    IDS_FILE_SAVE_AS_TEXT   "Текстовый документ (*.txt)|*.txt|Все документы (*.*)|*.*||"
+    IDS_FILE_SAVE_AS_SAPSAN "Текстовые документы (*.txt)|*.txt|Все документы (*.*)|*.*||"
+    IDS_ERR_HARWARE_UNKNOWN "COM%d: неизвестная ошибка"
+    IDS_ERR_HARWARE_NOT_PRESENT "COM%d: не установлен"
+    IDS_ERR_HARWARE_IS_BUSY "COM%d: он занят"
+    IDS_ERR_HARWARE_MORE_PROTOCOLS "Много устройств"
+    IDS_SOCKET_ERR          "TCP %s не может установить соединение"
+    IDS_DEVICE_SETUP        "Настройка концентраторов"
+    IDS_TEXT_EXIT           "Выход"
+    IDS_BUT_PRINT_PREVIEF   "&Вид.Печати"
+    IDS_BUT_PRINT           "&Печать"
+    IDS_BUT_UPDATE          "&Обновить"
+    IDS_HARDWARE            "IP адресс"
+    IDS_DELETE              "Стереть:\t"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_PAGESETUP       "Изменить настройки для просмотра страницы\nНастройка страницы"
+    ID_DEVICE_SETUP         "Настройки концентраторов подключения к уличным светильникам\nНастройка концентраторов"
+    ID_STOP_ALL             "Настройки HOST\nНастройки HOST"
+    ID_PROGRAM_DEVICES      "Програмирование контроллеров(сервисный режим)\nСервисный режим"
+    ID_SELECT_ALL           "Все устройства в группе за сцена\nВсё в група"
+    ID_SELECT_DEVICE        "Избор на устройство по име F9\nИзбор на устройство F9"
+    ID_MOVE_UP_SLOW         "Power 1\nPower 1"
+    ID_MOVE_UP_FAST         "Power 85\nPower 85"
+    ID_MOVE_DOWN_FAST       "Power 170\nPower 170"
+    ID_MOVE_DOWN_SLOW       "Power 255\nPower 255"
+    ID_REPER                "OnOff time\nOnOff time"
+    ID_IN_POSITION          "Движение в заданное положение\nВ положение"
+    ID_IN_OFFSET_POSITION   "? SIM errors\n? SIM errors"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BUSY_IN_DEVICES     "%s светильник занят"
+    IDS_HARDWARE_IS         "Аппарат %s уже существует"
+    IDS_TEST_VIEW           "Тестовое окно"
+    IDS_NO_TEST_VIEV        "Без окна"
+    IDS_NO_DATA             "Без данных"
+    IDS_FULL_TEST           "Полный тест"
+    IDS_STOP                "Состояние"
+    IDS_WORK                "Включен"
+    IDS_NO_WORK             "Выключен"
+    IDS_NAME_IS             "Имя %s существует"
+    IDS_BUSY_IN_ACCOUNT     "%s занят считыванием"
+    IDS_ADDRESS             "Адресс"
+    IDS_DEVICE              "Устройство"
+    IDS_NO_CONNECT          "ПОДКЛЮЧИТЬ"
+    IDS_PROGRAM_OK          "Успешное программирование"
+    IDS_PROGRAM_ERR         "ОШИБКА ПРОГРАММИРОВАНИЯ !!!"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_AC_ERR              "AC ошибка"
+    IDS_AC_OK               "AC в готовност"
+    IDS_LIMIT_UP            "Горен лимит"
+    IDS_LIMIT_DOWN          "Долен лимит"
+    IDS_LIMIT_SOFT          "Прогр. лимит"
+    IDS_LIMIT_NO            "Няма задействан лимит"
+    IDS_ERR_VAGE            "Оплетено въже"
+    IDS_LOCAL_UP            "Локално нагоре"
+    IDS_LOCAL_DOWN          "Локално надолу"
+    IDS_LOCAL_NO            "Няма локално движеение"
+    IDS_MOVE_UP             "Нагоре"
+    IDS_MOVE_DOWN           "Надолу"
+    IDS_VERSION             "Версия"
+    IDS_SUCSES              "Успех"
+    IDS_HELP1               "Забележка 1"
+    IDS_HELP2               "Забележка 2"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NAME                "Имя"
+    IDS_CLEAR_RAM           "Сброс RAM"
+    IDS_OFFSET              "Отместване метри"
+    IDS_MIN                 "Долен лимит метри"
+    IDS_MAX                 "Горен лимит метри"
+    IDS_LIMITS              "Отместване и лимити"
+    IDS_ERR_REMAK           "Приплъзващ ремък"
+    IDS_NO_SCENE            "Няма избрани за сцена"
+    IDS_SAVE_TRACERS        "StreetLights документи(*.slk)|*.trk|Всё документи (*.*)|*.*||"
+    IDS_NO_DEVICE           "Не открыто устройсво с именем %s"
+    IDS_UNTITLED            "Неименование"
+    IDS_UNKNOV_DATA_BASE    "Неизвестная версия базы данных:%d.%.2d"
+    IDS_NOT_OPERATOR        "Нет оператора"
+    IDS_NOT_OPERATORS_INF   "Нет информации для оператора"
+    IDS_NOT_PASSWORD        "Неправильный пароль"
+    IDS_UNKNOW_OPERATOR_NAME "Неизвестный оператор"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ENABLE_MOVE          "Разрешено премещение окон устройств\nРазрешено перемещение"
+    ID_REPER_ALL            "Задвижва избраните устройсрва до горен репер за обновяване на позицията\nВсё в репер"
+    ID_GO_DOWN_ALL          "Задвижва избраните устройсрва до долно положение\nВсё долу"
+    ID_SELECT               "Включить реле\nВключить реле"
+    ID_DESELECT             "Выключить реле\nВыключить реле"
+    ID_IN_STORED_ONE        "Избраното устройство в запомнена позиция от сцена\nВыбрать в запомнена позиция"
+    ID_IN_STORED_ALL        "Выполнить запомнената сцена\nВыполнить сцената"
+    ID_SELECT_OPERATOR      "Смена дежурного оператора\nСмена оператора"
+    ID_COBFIG_OPERATOR      "Настройка оператора\nОпрераторы"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SELECT_PC            "Смена номера рабочего места\nНомер рабочего места"
+    ID_CONFIG_DB            "Настройка подключения к базе данных\nПодключение к базе данных"
+    ID_ACCOUNTS_SYSTEM      "Отчёт о событиях в системе."
+    ID_ACCOUNTS_DEVICES     "Отчёт об устройствах"
+    ID_ACCOUNTS_ONE_DEVICE  "Отчёт о выбраных устройствах"
+    ID_ACCOUNTS_CLEAR       "Удалить отчёт"
+    ID_GO_UP_ALL            "Включить выбранные устройства в верхнее положение\nВсе вверх"
+    ID_DESELECT_ALL         "Всё устройства извън група за сцена\nРазгрупира Всё"
+    ID_CHANGE_DECORY        "Задава височината на декорите\nВисочина декори"
+    ID_LAMPS_SETUP          "Настройка уличных светильников\nНастройка уличных светильников"
+    ID_TEST_LQI             "Тест WPAN сети\nТест подключения"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PRIVILEGI           "Полномочия"
+    IDS_SERVIZ              "Обслуживание"
+    IDS_ADMIN               "Административный"
+    IDS_OPER                "Операторы"
+    IDS_CURRENT_OPERATOR    "Работающий оператор не может быть удалён!"
+    IDS_NOT_CONFIRM_PASSWORD "Пароль не правильный"
+    IDS_NOT_PASSWORD_ADD    "Нет пароль"
+    IDS_NOT_NAME            "Нет имени"
+    IDS_SYSTEM_ACCOUNT_NAME1 "Отчет о системных событиях"
+    IDS_OPERATOR            "Оператор"
+    IDS_DATETIME            "Время"
+    IDS_SYSTEM_TYPE         "Системное событие"
+    IDS_SYSTEM_UNKNOW       "Неизвестное событие !!!"
+    IDS_CONFIG_LAMPS        "Изменения в уличных светильниках"
+    IDS_CONFIG_OPERATORS    "Изменения у оператора"
+    IDS_CONFIG_ROUTERS      "Изменения в концентраторе"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CONFIG_LIMITS       "Изменения в лимите"
+    IDS_CONFIG_PC_NUMBER    "Изменения номера рабочего места"
+    IDS_CONFIG_CONNECT      "Изменения подключения к базе данных"
+    IDS_SYSTEM_ACCOUNT_NAME "SA"
+    IDS_NUMBER_PC           "№ PC"
+    IDS_DEVICE_ACCOUNT_NAME1 "Отчёт устройств"
+    IDS_DEVICE_ACCOUNT_NAME "DA"
+    IDS_METRI               "Метры"
+    IDS_DEVICE_TYPE         "События в устройствах"
+    IDS_NONE                "Конец события"
+    IDS_MOVE_UP_FAST        "Нагоре бързо"
+    IDS_MOVE_DOWN_FAST      "Надолу бързо"
+    IDS_GO_REPER            "В репер"
+    IDS_GO_POS              "В позиция"
+    IDS_DELETE_ACCOUTS      "Вы уверены, что хотите удалить отчёт?"
+    IDS_CLEAR_ACCOUNTS      "Удалить отчёт"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_GROUP               "Группа %d"
+    IDS_BUSY_IN_RUTERS      "Занят концентратор"
+    IDS_TIMERS              "Таймеры"
+    IDS_RADIUS              "RADIUS"
+    IDS_LAMPS               "Ул.свет."
+    IDS_LAMPS_CONNECTED     "В сети"
+    IDS_REJECTED            "Отказ подключения свет:"
+    IDS_ROUTER              "Концентратор"
+    IDS_LAST_CONTACT        "Последнее подключение"
+    IDS_WORK_HOURS          "Раб.часы"
+    IDS_STREET              "Улица"
+    IDS_STREET_NUMBER       "№ улицы"
+    IDS_STREET_LAMPS        "Настройка светильников"
+    IDS_DIABLED_LAMP_L1     "Рутер\tРутер\tЛампа\tРаб.\tВидяна\t\t\tПроверявана\t\tMAC\r\n"
+    IDS_DIABLED_LAMP_L2     "Отмен.\tпрогр.\t№\tчасове\t\t\t\t\t\t\tадрес\r\n"
+    IDS_FILE_SAVE_AS        "Text Files (*.txt)|*.txt|All Files (*.*)|*.*||"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LAST_TEST           "Проверено"
+    IDS_PERCENT_CONNECTED   "Проверены светильники %u, подключен %u  %% %.2lf"
+    IDS_NUMBER_IS_BUSY      "№ %u он занят!"
+    IDS_BAD_MAC             "Ошибка MAC адресс !"
+    IDS_GROUPS              "Группа таймеров"
+    IDS_NO_RUTER            "Нет контцентратора!"
+    IDS_NO_HARDWARE         "Нет модуля !"
+    IDS_NO_LAMP             "Не подключен !"
+    IDS_TIME_ON_ROUTER      "Концентратор вкл"
+    IDS_TIME_OFF_ROUTER     "Концентратор выкл"
+    IDS_CSQ                 "CSQ"
+    IDS_STATE               "State"
+    IDS_RELAY               "Реле"
+    IDS_TIME_ON             "Вкл"
+    IDS_TIME_OFF            "Выкл"
+    IDS_TEST_LQI1           "Тест LQI концентратора : %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TEST_LQI            "LQI_%d"
+    IDS_LQI                 "LQI"
+    IDS_PER                 "PER%"
+    IDS_PARENT              "Концентратор / Предыдущий светильник"
+    IDS_CHILDREN            "Следующий светильник"
+    IDS_DEPTH               "Уровень"
+    IDS_LAT                 "Координата с.ш."
+    IDS_LNG                 "Координата в.д."
+    IDS_TYPE_LAMP           "Тип св-ка"
+    IDS_LABEL               "Примечание"
+    IDS_ON_OFF_POWER2       "Питание 2"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CONFIG_ENERGY_METERS "Change Energy Meters"
+    IDS_CURRENT_ENERGY      "Curren Energy\tRouter:\t%s\t%s\t% 4d lamps\t% 6.3f kW\r\n"
+    IDS_CURRENT_ENERGY1     "Frequency\tHz\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY2     "Voltage      \tV\t                \t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY3     "Current       \tA\t                \t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY4     "Active power\tkW\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY5     "Reactive power\tkvar\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY6     "Apparent power\tkVA\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CURRENT_ENERGY7     "Power factor\t\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY_NAME "Current Energy"
+    IDS_CURRENT_ENERGY_FILE "CurrentEnergy_"
+    IDS_TOTAL_CALCULATED    "Total calculated \t% 4d lamps\t% 6.3f kW\r\n"
+    IDS_CURRENT_ENERGY8     "Active power\tkW\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY9     "Reactive power\tkvar\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY10    "Apparent power\tkVA\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY        "Total Energy\tRouter:\t%s\t%s\t% 4d lamps\t% 6.3f kW\r\n"
+    IDS_TOTAL_ENERGY1       "Active Enegy,T1,T2          \tkWh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY2       "Active Enegy L1,L2,L3     \tkWh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY3       "Reactive Enegy,T1,T2     \tkvarh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TOTAL_ENERGY4       "Reactive Enegy L1,L2,L3 \tkvarh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY_NAME   "Total Energy"
+    IDS_TOTAL_ENERGY_FILE   "TotalEnergy_"
+    IDS_HISTORY_ENERGY      "History Active Energy\tRouter:\t%s\t%s\t% 4d lamps\t% 6.3f kW\r\n"
+    IDS_HISTORY_ENERGY1     "Date time    Active Energy kW    \tTotal          \tL1            \tL2            \tL3\r\n"
+    IDS_HISTORY_ENERGY2     "%s\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_HISTORY_ENERGY_NAME "History Active Energy"
+    IDS_HISTORY_ENERGY_FILE "HistoryActiveEnergy_"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TOTAL               "Total\t\t\t\t\t%d\r\n"
+    IDS_RESER_SIM           "GPRS off/on"
+    IDS_HOST_VERSION        "HOST Ver."
+    IDS_JENNIC_VERSION      "COOR Ver."
+    IDS_POWER_W             "Power W"
+    IDS_WPAN                "WPAN"
+    IDS_RESET_GPRS          "Reset GPRS"
+    IDS_HOUR                "hour"
+    IDS_MINUTE              "min"
+    IDS_ENERGY_METER        "Energy Meter"
+END
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup",                ID_FILE_PRINT_SETUP
+        MENUITEM "Page Se&tup",                 ID_FILE_PAGESETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Setup"
+    BEGIN
+        MENUITEM "&Routers",                    ID_DEVICE_SETUP
+        MENUITEM "&Street Lights",              ID_LAMPS_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Operators",                  ID_COBFIG_OPERATOR
+        MENUITEM "&Working place number",       ID_SELECT_PC
+        MENUITEM "Data&Base connect",           ID_CONFIG_DB
+    END
+    POPUP "&Control"
+    BEGIN
+        MENUITEM "Change operator",             ID_SELECT_OPERATOR
+    END
+    POPUP "&Accounts"
+    BEGIN
+        MENUITEM "System",                      ID_ACCOUNTS_SYSTEM
+        MENUITEM "&Test LQI",                   ID_TEST_LQI
+        MENUITEM SEPARATOR
+        MENUITEM "Clear",                       ID_ACCOUNTS_CLEAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "Tile &Horizontaliy",          ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertically",            ID_WINDOW_TILE_VERT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About StreetLights...",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\bmp00001.bmp"
+IDB_BITMAP_VAHS         BITMAP                  "res\\bitmap_v.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 32, 32
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_DEVICE_SETUP
+    BUTTON      ID_LAMPS_SETUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_DISPENSERTYPE       ICON                    "res\\idr_disp.ico"
+IDR_MAINFRAME           ICON                    "res\\ico00002.ico"
+IDR_TV_TRAC_ACOUNT      ICON                    "res\\ico00003.ico"
+IDR_TV_TRAC_DATA        ICON                    "res\\ico00004.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F10,         ID_STOP_ALL,            VIRTKEY, NOINVERT
+    VK_F4,          ID_APP_EXIT,            VIRTKEY, ALT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F9,          ID_SELECT_DEVICE,       VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 281, 134
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About StreetLights"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "StreetLights Copyright (C) 2015",IDC_STATIC,7,83,119,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,224,113,50,14,WS_GROUP
+    LTEXT           "DB Version ",IDC_STATIC_VERSION_DB,7,115,90,10
+    LTEXT           "Version       ",IDC_STATIC_VERSION,7,98,90,10
+    CONTROL         IDB_BITMAP_VAHS,IDC_STATIC,"Static",SS_BITMAP,7,7,265,46
+END
+
+IDD_NEW_NAME DIALOG 0, 0, 186, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,7,7,112,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_NEW_OPERATOR DIALOG 0, 0, 199, 118
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New operator"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,7,23,125,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSORD,7,57,125,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONFIRM_PASSWORD,8,92,125,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,142,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,142,24,50,14
+    LTEXT           "Name",IDC_STATIC,7,9,84,10
+    LTEXT           "Password",IDC_STATIC,7,43,84,10
+    LTEXT           "Repeat password",IDC_STATIC,8,79,81,10
+END
+
+IDD_OPERATORS_SETUP DIALOG 0, 0, 261, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Operators"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,190,160
+    PUSHBUTTON      "&New",IDC_BUTTON_NEW,204,7,50,14
+    PUSHBUTTON      "&Delete",IDC_BUTTON_DEL,204,25,50,14
+    PUSHBUTTON      "Print pre&view",IDC_BUTTON_PRINT_PREVIEV,204,76,50,14
+    PUSHBUTTON      "&Print",IDC_BUTTON_PRINT,204,93,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,204,161,50,14
+END
+
+IDD_PAGE_SETUP DIALOG 0, 0, 244, 93
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Page Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_LEFT,56,20,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_RIGHT,136,20,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_TOP,56,42,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BOTTOM,136,43,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Tables in one page",IDC_CHECK_FIT_PAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,69,114,12
+    DEFPUSHBUTTON   "OK",IDOK,187,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,187,24,50,14
+    LTEXT           "Left:",IDC_STATIC,18,20,31,12
+    LTEXT           "Top:",IDC_STATIC,18,42,31,12
+    LTEXT           "Right:",IDC_STATIC,98,20,31,12
+    LTEXT           "Bottom:",IDC_STATIC,98,43,31,12
+    GROUPBOX        "Margins [mm]",IDC_STATIC,7,7,173,57
+    CONTROL         "Black and White",IDC_BLACK_WITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,136,69,88,13
+END
+
+IDD_PC_NUMBER DIALOG 0, 0, 186, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Working place"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_NUMBER,7,7,112,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    LTEXT           "All working places need unique number",IDC_STATIC,7,28,114,21
+END
+
+IDD_SELECT_OPERATOR DIALOG 0, 0, 186, 91
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Oprerator"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_NAME,7,22,112,55,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PASSWORD,7,70,112,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    LTEXT           "Name",IDC_STATIC,7,7,22,12
+    LTEXT           "Password",IDC_STATIC,7,57,64,10
+END
+
+IDD_LAMP_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Street Lights"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "MAC from file",IDC_BUTTON_LOAD,721,309,86,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Routers from file",IDC_BUTTON_LOAD_ROUTERS,721,329,86,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Routers from rejected",IDC_BUTTON_LOAD_ROUTERS_REJECT,721,349,86,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Delite",IDC_BUTTON_DEL,747,71,50,14
+    PUSHBUTTON      "&New",IDC_BUTTON_NEW,747,44,50,14
+    EDITTEXT        IDC_EDIT_NUMBER,768,25,29,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Light",IDC_STATIC,744,15,57,49
+    LTEXT           "#",IDC_STATIC,751,27,12,15
+    PUSHBUTTON      "Light",IDC_BUTTON_LIGHT1,729,193,50,14
+    EDITTEXT        IDC_EDIT_LIGHTS,729,176,50,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "Sucses",IDC_STATIC_SUCSES,711,217,86,14
+END
+
+IDD_HARDWARE_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Routers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "&New",IDC_BUTTON_NEW,757,77,50,14
+    PUSHBUTTON      "&Delete",IDC_BUTTON_DEL,757,103,50,14
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,699,63,100,15
+    LTEXT           "IP address",IDC_STATIC,699,47,100,14
+    PUSHBUTTON      "Test GPRS",IDC_BUTTON_TEST,763,156,44,22
+    PUSHBUTTON      "Hardware from file",IDC_BUTTON_LOAD,699,95,51,21,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Power on",IDC_BUTTON_ON,763,182,44,22
+    PUSHBUTTON      "Power off",IDC_BUTTON_OFF,763,210,44,22
+    PUSHBUTTON      "Light",IDC_BUTTON_LIGHT,763,269,44,22
+    PUSHBUTTON      "Test GPRS",IDC_BUTTON_TEST1,701,156,44,22
+    PUSHBUTTON      "Power on",IDC_BUTTON_ON1,701,183,44,22
+    PUSHBUTTON      "Power off",IDC_BUTTON_OFF1,701,210,44,22
+    PUSHBUTTON      "Light",IDC_BUTTON_LIGHT1,701,269,44,22
+    LTEXT           "All",IDC_STATIC,764,139,43,12
+    LTEXT           "Selected",IDC_STATIC,703,139,43,12
+    EDITTEXT        IDC_EDIT_LIGHTS,731,250,45,15,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUMBER,768,25,29,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "#",IDC_STATIC,751,27,12,15
+    GROUPBOX        "Router",IDC_STATIC,696,17,111,78
+    PUSHBUTTON      "Clear RAM",IDC_BUTTON_CLEAR_RAM1,702,324,52,18
+    PUSHBUTTON      "Clear RAM",IDC_BUTTON_CLEAR_RAM,755,324,52,18
+END
+
+IDD_LAMP_GROUPS DIALOG 0, 0, 199, 271
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Timer Groups"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Exit",IDCANCEL,142,250,50,14
+    CONTROL         "Group 1",IDC_DB_GROUP1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,20,54,16
+    CONTROL         "Group 2",IDC_DB_GROUP2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,35,54,16
+    CONTROL         "Group 3",IDC_DB_GROUP3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,50,54,16
+    CONTROL         "Group 4",IDC_DB_GROUP4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,65,54,16
+    CONTROL         "Group 5",IDC_DB_GROUP5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,80,54,16
+    CONTROL         "Group 6",IDC_DB_GROUP6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,95,54,16
+    CONTROL         "Group 7",IDC_DB_GROUP7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,110,54,16
+    CONTROL         "Group 8",IDC_DB_GROUP8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,125,54,16
+    CONTROL         "Group 9",IDC_DB_GROUP9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,140,54,16
+    CONTROL         "Group 10",IDC_DB_GROUP10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,155,54,16
+    CONTROL         "Group 11",IDC_DB_GROUP11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,170,54,16
+    CONTROL         "Group 12",IDC_DB_GROUP12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,185,54,16
+    CONTROL         "Group 13",IDC_DB_GROUP13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,200,54,16
+    CONTROL         "Group 14",IDC_DB_GROUP14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,215,54,16
+    CONTROL         "Group 15",IDC_DB_GROUP15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,230,54,16
+    CONTROL         "Group 16",IDC_DB_GROUP16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,245,54,16
+    PUSHBUTTON      "Read from DB",IDC_BUTTON_LOAD_DB,112,20,80,17
+    PUSHBUTTON      "Save in DB",IDC_BUTTON_SAVE_DB,112,45,80,17
+    PUSHBUTTON      "Read from Light",IDC_BUTTON_LOAD_LAMP,112,110,80,17
+    PUSHBUTTON      "Save in Light",IDC_BUTTON_SAVE_LAMP,112,135,80,17
+    CTEXT           "Success",IDC_STATIC_SUCSES,106,158,86,14
+END
+
+IDD_LAMP_IN_ROUTER_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lights in Routers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "All",IDC_STATIC,756,7,43,12
+    LTEXT           "Selected",IDC_STATIC,705,7,43,12
+    PUSHBUTTON      "Connected",IDC_BUTTON_GET1,702,86,52,18
+    PUSHBUTTON      "Connected",IDC_BUTTON_GET,755,86,52,18
+    PUSHBUTTON      "Read rejected",IDC_BUTTON_GET_REJECT1,702,145,52,18
+    PUSHBUTTON      "Programing",IDC_BUTTON_LAMPS_SET1,702,125,52,18
+    PUSHBUTTON      "Programing",IDC_BUTTON_LAMPS_SET,755,125,52,18
+    GROUPBOX        "Street Lights",IDC_STATIC,699,74,108,129
+    PUSHBUTTON      "Read status",IDC_BUTTON_GET_LANPS_STATUS1,702,180,52,18
+    PUSHBUTTON      "Read status",IDC_BUTTON_GET_LANPS_STATUS,755,180,52,18
+    PUSHBUTTON      "Read rejected",IDC_BUTTON_GET_REJECT,755,145,52,18
+    PUSHBUTTON      "Routers from rejcted",IDC_BUTTON_LOAD_ROUTERS_REJECT,721,350,86,14
+    PUSHBUTTON      "Prog.RADIUS",IDC_BUTTON_SET1,702,23,52,18
+    PUSHBUTTON      "Prog.RADIUS",IDC_BUTTON_SET,755,23,52,18
+END
+
+IDD_ROUTER_SELECT DIALOG 0, 0, 282, 321
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Router"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO2,7,6,208,308,CBS_SIMPLE | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,225,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,225,24,50,14
+END
+
+IDD_ROUTER_TIMERS_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Timers in Routers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "All",IDC_STATIC,756,7,43,12
+    LTEXT           "Selected",IDC_STATIC,705,7,43,12
+    PUSHBUTTON      "Send",IDC_BUTTON_SET1,702,23,52,18
+    PUSHBUTTON      "Reciv",IDC_BUTTON_GET1,702,47,52,18
+    PUSHBUTTON      "Send",IDC_BUTTON_SET,755,23,52,18
+    PUSHBUTTON      "Reciv",IDC_BUTTON_GET,755,47,52,18
+END
+
+IDD_TIMERS_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Timers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "&New",IDC_BUTTON_NEW,757,10,50,14
+    PUSHBUTTON      "&Delete",IDC_BUTTON_DEL,757,29,50,14
+    EDITTEXT        IDC_LAT,718,76,65,15,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "Calculate",IDC_CALCULATE,718,128,65,20
+    RTEXT           "XX:XX",IDC_SUNRISE,718,173,65,19,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    GROUPBOX        "Sunrise Sunset",IDC_STATIC,707,51,85,184
+    LTEXT           "Latitude",IDC_STATIC,718,61,64,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_LON,718,108,65,15,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Longitude",IDC_STATIC,718,93,64,14,SS_CENTERIMAGE
+    LTEXT           "Sunrise",IDC_STATIC,718,156,64,14,SS_CENTERIMAGE
+    RTEXT           "XX:XX",IDC_SUNSET,718,208,65,19,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+    LTEXT           "Sunset",IDC_STATIC,718,192,64,14,SS_CENTERIMAGE
+END
+
+IDD_WPAN_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WPAN_GPRS_Energy Meters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "All",IDC_STATIC,756,7,43,12
+    LTEXT           "Selected",IDC_STATIC,705,7,43,12
+    PUSHBUTTON      "Send",IDC_BUTTON_SET1,702,23,52,18
+    PUSHBUTTON      "Reciv",IDC_BUTTON_GET1,702,47,52,18
+    PUSHBUTTON      "Read MAC",IDC_BUTTON_GET_MAC1,702,71,52,18
+    PUSHBUTTON      "Send",IDC_BUTTON_SET,755,23,52,18
+    PUSHBUTTON      "Reciv",IDC_BUTTON_GET,755,47,52,18
+    PUSHBUTTON      "Read MAC",IDC_BUTTON_GET_MAC,755,71,52,18
+END
+
+IDD_DIALOG_DISBLED_LAMPS DIALOG 0, 0, 525, 295
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Reject Lights"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Save as file",ID_SAVE_DATA,435,7,83,14
+    PUSHBUTTON      "Exit",IDCANCEL,435,24,83,14
+    EDITTEXT        IDC_EDIT1,7,7,424,281,ES_MULTILINE | ES_UPPERCASE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_TYPE_LAMP_SETUP DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lamp Types"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    PUSHBUTTON      "&New",IDC_BUTTON_NEW,757,10,50,14
+    PUSHBUTTON      "&Delete",IDC_BUTTON_DEL,757,29,50,14
+END
+
+IDD_ENRGY_METERS DIALOG 0, 0, 814, 371
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Energy Meters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,7,7,683,357
+    LTEXT           "All",-1,756,7,43,12
+    LTEXT           "Selected",-1,705,7,43,12
+    PUSHBUTTON      "Total",IDC_BUTTON_TOTAL1,702,41,52,18
+    PUSHBUTTON      "Current",IDC_BUTTON_CURRENT1,702,21,52,18
+    PUSHBUTTON      "Curent",IDC_BUTTON_CURRENT,755,21,52,18
+    PUSHBUTTON      "History",IDC_BUTTON_HISTORY1,702,76,52,18
+    PUSHBUTTON      "History",IDC_BUTTON_GET_HISTORY,755,76,52,18
+    PUSHBUTTON      "Total",IDC_BUTTON_TOTAL,755,41,52,18
+END
+
+IDD_DATE_TIME_LIMIT DIALOG 0, 0, 263, 83
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Date and Time Limits"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,206,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,206,24,50,14
+    CONTROL         "DateTimePicker1",IDC_DATE_MIN,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,7,23,75,15
+    CONTROL         "DateTimePicker1",IDC_DATE_MAX,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,7,53,75,15
+    CONTROL         "DateTimePicker1",IDC_TIME_MIN,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_SHOWNONE | WS_TABSTOP | 0x8,99,23,75,15
+    CONTROL         "DateTimePicker1",IDC_TIME_MAX,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | DTS_SHOWNONE | WS_TABSTOP | 0x8,99,53,75,15
+    LTEXT           "> =",IDC_STATIC,7,8,40,14
+    LTEXT           "< =",IDC_STATIC,7,38,40,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,0,0,0
+ PRODUCTVERSION 4,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "StreetLights MFC Application"
+            VALUE "FileVersion", "4.0.0.0"
+            VALUE "InternalName", "StreetLights"
+            VALUE "LegalCopyright", "Copyright (C) 2015"
+            VALUE "OriginalFilename", "StreetLights.EXE"
+            VALUE "ProductName", "StreetLights"
+            VALUE "ProductVersion", "4.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_NEW_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_NEW_OPERATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_OPERATORS_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_PAGE_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_PC_NUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_SELECT_OPERATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_LAMP_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_HARDWARE_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_LAMP_GROUPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_LAMP_IN_ROUTER_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_ROUTER_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 314
+    END
+
+    IDD_ROUTER_TIMERS_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_TIMERS_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_WPAN_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_DIALOG_DISBLED_LAMPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 518
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_TYPE_LAMP_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_ENRGY_METERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 807
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_DATE_TIME_LIMIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "StreetLights"
+    IDR_DISPENSERTYPE       "\nConnect"
+    IDR_TV_TRAC_DATA        "\nStreetLights\n\nStreetLights documents(*.trk)\n.trk\nStreetLights.Document\nStreetLights document"
+    IDR_TV_TRAC_ACOUNT      "\nStreetLights\n\nStreetLights account(*.kid)\n.kid\nStreetLights.Account\nStreetLights account"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "StreetLights"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_SO         "No operator"
+    ID_INDICATOR_LIM        "Decors 0.00m"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout StreetLights"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ANOTHER_TRAKERS     "Another StreetLights is started"
+    IDS_PAGE_OF_PAGE        "Page %d of %d"
+    IDS_FILE_SAVE_AS_TEXT   "Text documents (*.txt)|*.txt|All documents (*.*)|*.*||"
+    IDS_FILE_SAVE_AS_SAPSAN "Text documents (*.txt)|*.txt|All documents (*.*)|*.*||"
+    IDS_ERR_HARWARE_UNKNOWN "COM%d: unknown error"
+    IDS_ERR_HARWARE_NOT_PRESENT "COM%d: is not present"
+    IDS_ERR_HARWARE_IS_BUSY "COM%d: is busy"
+    IDS_ERR_HARWARE_MORE_PROTOCOLS "More devices"
+    IDS_SOCKET_ERR          "TCP %s not connected"
+    IDS_DEVICE_SETUP        "Routers Setup"
+    IDS_TEXT_EXIT           "Exit"
+    IDS_BUT_PRINT_PREVIEF   "Print Pre&view"
+    IDS_BUT_PRINT           "&Print..."
+    IDS_BUT_UPDATE          "Re&fresh"
+    IDS_HARDWARE            "Hardware"
+    IDS_DELETE              "Delete:\t"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_PAGESETUP       "Changes the page layout setings\nPage Setup"
+    ID_DEVICE_SETUP         "Setup the routers\nRouters Setup"
+    ID_STOP_ALL             "Stop all devices F10\nStop all F10"
+    ID_PROGRAM_DEVICES      "Reprograming the driven devices"
+    ID_SELECT_ALL           "All devices in group\nAll in group"
+    ID_SELECT_DEVICE        "Select  device by name F9\nSelect deviceF9"
+    ID_MOVE_UP_SLOW         "Move left\nLeft"
+    ID_MOVE_UP_FAST         "Move up\nUp"
+    ID_MOVE_DOWN_FAST       "Move down\nDown"
+    ID_MOVE_DOWN_SLOW       "Move right\nRight"
+    ID_REPER                "Move to top  hardware limit\nIn zero"
+    ID_IN_POSITION          "Move ro target position\nIn position"
+    ID_IN_OFFSET_POSITION   "Move ro relative position\nRelative position"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BUSY_IN_DEVICES     "%s is busy in devices"
+    IDS_HARDWARE_IS         "Hardware %s is created"
+    IDS_TEST_VIEW           "Test view"
+    IDS_NO_TEST_VIEV        "Without view"
+    IDS_NO_DATA             "Without data"
+    IDS_FULL_TEST           "Full text"
+    IDS_STOP                "Enable"
+    IDS_WORK                "On"
+    IDS_NO_WORK             "Off"
+    IDS_NAME_IS             "Name %s is busy"
+    IDS_BUSY_IN_ACCOUNT     "%s busy in accounts"
+    IDS_ADDRESS             "Address"
+    IDS_DEVICE              "Device"
+    IDS_NO_CONNECT          "CONNECT"
+    IDS_PROGRAM_OK          "Programing success"
+    IDS_PROGRAM_ERR         "BAD PROGRAMING !!!"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_AC_ERR              "AC error"
+    IDS_AC_OK               "AC ready"
+    IDS_LIMIT_UP            "Up limit"
+    IDS_LIMIT_DOWN          "Down limit"
+    IDS_LIMIT_SOFT          "Softw.limit"
+    IDS_LIMIT_NO            "No limits"
+    IDS_ERR_VAGE            "Slaclwire"
+    IDS_LOCAL_UP            "Local up"
+    IDS_LOCAL_DOWN          "Local down"
+    IDS_LOCAL_NO            "No local"
+    IDS_MOVE_UP             "Up"
+    IDS_MOVE_DOWN           "Down"
+    IDS_VERSION             "Version"
+    IDS_SUCSES              "Success"
+    IDS_HELP1               "Label 1"
+    IDS_HELP2               "Label 2"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NAME                "Name"
+    IDS_CLEAR_RAM           "Clear RAM"
+    IDS_OFFSET              "Offset [m]"
+    IDS_MIN                 "Down limit [m]"
+    IDS_MAX                 "Up limit [m]"
+    IDS_LIMITS              "Offsets & Limits"
+    IDS_ERR_REMAK           "Bad belt"
+    IDS_NO_SCENE            "No selected scene"
+    IDS_SAVE_TRACERS        "StreetLights documents(*.trk)|*.trk|All documents(*.*)|*.*||"
+    IDS_NO_DEVICE           "Not found device with name %s"
+    IDS_UNTITLED            "No name"
+    IDS_UNKNOV_DATA_BASE    "Unknown version database:%d.%.2d"
+    IDS_NOT_OPERATOR        "No operator"
+    IDS_NOT_OPERATORS_INF   "No information about operator"
+    IDS_NOT_PASSWORD        "Bad password"
+    IDS_UNKNOW_OPERATOR_NAME "Unknown operator"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ENABLE_MOVE          "Enable move the devices in desktop\nEnable move"
+    ID_REPER_ALL            "Move all devices to top  hardware limit\nAll in zero"
+    ID_GO_DOWN_ALL          "Move all devices to down\nAll idown"
+    ID_SELECT               "Included device in the scene\nIncluded in the scene"
+    ID_DESELECT             "Excluded device from the scene\nExcluded from the scene"
+    ID_IN_STORED_ONE        "Selected device in position from scene\nSelected in position"
+    ID_IN_STORED_ALL        "Play loaded scene\nPlay scene"
+    ID_SELECT_OPERATOR      "Change operator\nChange operator"
+    ID_COBFIG_OPERATOR      "Operators Setup\nOperators"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SELECT_PC            "Working place number setup\nWorking place number"
+    ID_CONFIG_DB            "DataBase connect setup\nDataBase connect"
+    ID_ACCOUNTS_SYSTEM      "System account"
+    ID_ACCOUNTS_DEVICES     "Devices account"
+    ID_ACCOUNTS_ONE_DEVICE  "Selected device accout"
+    ID_ACCOUNTS_CLEAR       "Clear accounts"
+    ID_GO_UP_ALL            "Move all devices to up\nAll up"
+    ID_DESELECT_ALL         "All devices ungroup\nAll ungroup"
+    ID_CHANGE_DECORY        "Change height decors\nHeight decors"
+    ID_LAMPS_SETUP          "Setup the Street Lights\nStreet Lights Setup"
+    ID_TEST_LQI             "Test WPAN\nTest connection"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PRIVILEGI           "Authority"
+    IDS_SERVIZ              "Services"
+    IDS_ADMIN               "Administrator"
+    IDS_OPER                "Operator"
+    IDS_CURRENT_OPERATOR    "Working operator is not deleted !"
+    IDS_NOT_CONFIRM_PASSWORD "Bad password"
+    IDS_NOT_PASSWORD_ADD    "No password"
+    IDS_NOT_NAME            "No name"
+    IDS_SYSTEM_ACCOUNT_NAME1 "System account"
+    IDS_OPERATOR            "Operator"
+    IDS_DATETIME            "Time"
+    IDS_SYSTEM_TYPE         "System event"
+    IDS_SYSTEM_UNKNOW       "Unknown event !!!"
+    IDS_CONFIG_DEVICES      "Change devices"
+    IDS_CONFIG_OPERATORS    "Change operators"
+    IDS_CONFIG_HARDWARE     "Change hardware"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CONFIG_LIMITS       "Change limits"
+    IDS_CONFIG_PC_NUMBER    "Change number working place"
+    IDS_CONFIG_CONNECT      "Change database connection"
+    IDS_SYSTEM_ACCOUNT_NAME "SA"
+    IDS_NUMBER_PC           "# PC"
+    IDS_DEVICE_ACCOUNT_NAME1 "Devices account"
+    IDS_DEVICE_ACCOUNT_NAME "DA"
+    IDS_METRI               "Meters"
+    IDS_DEVICE_TYPE         "Event in device"
+    IDS_NONE                "End event"
+    IDS_MOVE_UP_FAST        "Up fast"
+    IDS_MOVE_DOWN_FAST      "Down fast"
+    IDS_GO_REPER            "In zero"
+    IDS_GO_POS              "In position"
+    IDS_DELETE_ACCOUTS      "Are you sure to delete accounts ?"
+    IDS_CLEAR_ACCOUNTS      "Clear accounts"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR               "Error"
+    IDS_ADDRESS1            "City"
+    IDS_ADDRESS2            "Address"
+    IDS_GPRS_ERRORS         "GPRS Err."
+    IDS_ON_OFF              "On/Off"
+    IDS_NUMBER              "#"
+    IDS_CHANNEL             "Channel"
+    IDS_PAN_ID              "Pan ID"
+    IDS_SEQURITY            "Sequrity key"
+    IDS_MAC_ADDRESS         "MAC address"
+    IDS_ON_OFF_POWER        "Power 1"
+    IDS_ON                  "On"
+    IDS_OFF                 "Off"
+    IDS_LIGHT               "Light"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_GROUP               "Group %d"
+    IDS_BUSY_IN_RUTERS      "Busy in routers"
+    IDS_TIMERS              "Timers"
+    IDS_RADIUS              "RADIUS"
+    IDS_LAMPS               "Str.Light"
+    IDS_LAMPS_CONNECTED     "Connected"
+    IDS_REJECTED            "Reject ligths:"
+    IDS_ROUTER              "Router"
+    IDS_LAST_CONTACT        "Last connection"
+    IDS_WORK_HOURS          "Work hours"
+    IDS_STREET              "Street"
+    IDS_STREET_NUMBER       "Number in street"
+    IDS_STREET_LAMPS        "Street Lights Setup"
+    IDS_DIABLED_LAMP_L1     "Router\tRouter\tLamps\tWork\tLast time\t\t\tVerifed\t\tMAC\r\n"
+    IDS_DIABLED_LAMP_L2     "Reject\tProgr.\t#\tHours\t\t\t\t\t\t\tAdrress\r\n"
+    IDS_FILE_SAVE_AS        "Text Files (*.txt)|*.txt|All Files (*.*)|*.*||"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LAST_TEST           "Verifed"
+    IDS_PERCENT_CONNECTED   "Verifed lights %u, connected %u  %% %.2lf"
+    IDS_NUMBER_IS_BUSY      "Number %u is busy !"
+    IDS_BAD_MAC             "Bad MAC address !"
+    IDS_GROUPS              "Timer Groups"
+    IDS_NO_RUTER            "Not router !"
+    IDS_NO_HARDWARE         "Not hardware !"
+    IDS_NO_LAMP             "Not connected !"
+    IDS_TIME_ON_ROUTER      "Router is on"
+    IDS_TIME_OFF_ROUTER     "Router is off"
+    IDS_CSQ                 "CSQ"
+    IDS_STATE               "State"
+    IDS_RELAY               "Relay"
+    IDS_TIME_ON             "Power on"
+    IDS_TIME_OFF            "Power off"
+    IDS_TEST_LQI1           "Test LQI router : %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TEST_LQI            "LQI_%d"
+    IDS_LQI                 "LQI"
+    IDS_PER                 "PER%"
+    IDS_PARENT              "Router /Parenth"
+    IDS_CHILDREN            "Next light"
+    IDS_DEPTH               "Level"
+    IDS_LAT                 "Latitude"
+    IDS_LNG                 "Longitude "
+    IDS_TYPE_LAMP           "Type lamp"
+    IDS_LABEL               "Label"
+    IDS_ON_OFF_POWER2       "Power 2"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CONFIG_ENERGY_METERS "Change Energy Meters"
+    IDS_CURRENT_ENERGY      "Curren Energy\tRouter:\t%s\t%s\t% 4d lamps\t% 6.3f kW\r\n"
+    IDS_CURRENT_ENERGY1     "Frequency\tHz\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY2     "Voltage      \tV\t                \t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY3     "Current       \tA\t                \t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY4     "Active power\tkW\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY5     "Reactive power\tkvar\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY6     "Apparent power\tkVA\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CURRENT_ENERGY7     "Power factor\t\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY_NAME "Current Energy"
+    IDS_CURRENT_ENERGY_FILE "CurrentEnergy_"
+    IDS_TOTAL_CALCULATED    "Total calculated \t% 4d lamps\t% 6.3f kW\r\n"
+    IDS_CURRENT_ENERGY8     "Active power\tkW\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY9     "Reactive power\tkvar\t% 16.3f\r\n"
+    IDS_CURRENT_ENERGY10    "Apparent power\tkVA\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY        "Total Energy\tRouter:\t%s\t%s\t% 4d lamps\t% 6.3f kW\r\n"
+    IDS_TOTAL_ENERGY1       "Active Enegy,T1,T2          \tkWh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY2       "Active Enegy L1,L2,L3     \tkWh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY3       "Reactive Enegy,T1,T2     \tkvarh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TOTAL_ENERGY4       "Reactive Enegy L1,L2,L3 \tkvarh\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_TOTAL_ENERGY_NAME   "Total Energy"
+    IDS_TOTAL_ENERGY_FILE   "TotalEnergy_"
+    IDS_HISTORY_ENERGY      "History Active Energy\tRouter:\t%s\t%s\t% 4d lamps\t% 6.3f kW\r\n"
+    IDS_HISTORY_ENERGY1     "Date time    Active Energy kW    \tTotal          \tL1            \tL2            \tL3\r\n"
+    IDS_HISTORY_ENERGY2     "%s\t% 16.3f\t% 16.3f\t% 16.3f\t% 16.3f\r\n"
+    IDS_HISTORY_ENERGY_NAME "History Active Energy"
+    IDS_HISTORY_ENERGY_FILE "HistoryActiveEnergy_"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TOTAL               "Total\t\t\t\t\t%d\r\n"
+    IDS_RESER_SIM           "GPRS off/on"
+    IDS_HOST_VERSION        "HOST Ver."
+    IDS_JENNIC_VERSION      "COOR Ver."
+    IDS_POWER_W             "Power W"
+    IDS_WPAN                "WPAN"
+    IDS_RESET_GPRS          "Reset GPRS"
+    IDS_HOUR                "hour"
+    IDS_MINUTE              "min"
+    IDS_ENERGY_METER        "Energy Meter"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\TV_Tracers.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

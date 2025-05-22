@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug US|Win32">
+      <Configuration>Debug US</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRus|Win32">
+      <Configuration>DebugRus</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release US|Win32">
+      <Configuration>Release US</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRus|Win32">
+      <Configuration>ReleaseRus</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUA|Win32">
+      <Configuration>ReleaseUA</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{820A8199-8415-45EB-9495-6F566A37A29D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>StreetLights</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRus|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUA|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release US|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRus|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug US|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRus|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUA|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release US|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRus|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug US|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug US|Win32'">
+    <OutDir>.\Debug_US\</OutDir>
+    <IntDir>.\Debug_US\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRus|Win32'">
+    <OutDir>.\ReleaseRus\</OutDir>
+    <IntDir>.\ReleaseRus\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release US|Win32'">
+    <OutDir>.\Release_US\</OutDir>
+    <IntDir>.\Release_US\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>StreetLights</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUA|Win32'">
+    <OutDir>.\ReleaseUA\</OutDir>
+    <IntDir>.\ReleaseUA\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRus|Win32'">
+    <OutDir>.\DebugRus\</OutDir>
+    <IntDir>.\DebugRus\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>StreetLights</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug US|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug_US\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug_US\TV_Tracers.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug_US\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug_US\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug_US\TV_Tracers.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0402</Culture>
+      <PreprocessorDefinitions>_DEBUG;AFX_RESOURCE_DLL;AFX_TARG_ENU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug_US\TV_Tracers.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>Debug_US/StreetLights.exe</OutputFile>
+      <AdditionalDependencies>..\..\Grid1_0\Debug\Grid1_0.lib;..\Free_Util_Dll\Debug\Util_Dll.lib;winmm.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRus|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseRus\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\ReleaseRus\TV_Tracers.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\ReleaseRus\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseRus\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\ReleaseRus\TV_Tracers.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;AFX_RESOURCE_DLL;AFX_TARG_RUS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseRus\TV_Tracers.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>ReleaseRus/StreetLights.exe</OutputFile>
+      <AdditionalDependencies>..\..\Grid1_0\Release\Grid1_0.lib;..\Free_Util_Dll\Release\Util_Dll.lib;winmm.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release US|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release_US\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release_US\TV_Tracers.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release_US\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release_US\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release_US\TV_Tracers.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0402</Culture>
+      <PreprocessorDefinitions>NDEBUG;AFX_RESOURCE_DLL;AFX_TARG_ENU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release_US\TV_Tracers.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>Release_US/StreetLights.exe</OutputFile>
+      <AdditionalDependencies>..\..\Grid1_0\Release\Grid1_0.lib;..\Free_Util_Dll\Release\Util_Dll.lib;winmm.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\TV_Tracers.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\TV_Tracers.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0402</Culture>
+      <PreprocessorDefinitions>_DEBUG;AFX_RESOURCE_DLL;AFX_TARG_BGR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\TV_Tracers.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>..\..\Grid1_0\Debug\Grid1_0.lib;..\Free_Util_Dll\Debug\Util_Dll.lib;winmm.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>Debug/StreetLights.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUA|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseUA\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\ReleaseUA\TV_Tracers.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\ReleaseUA\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseUA\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\ReleaseUA\TV_Tracers.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;AFX_RESOURCE_DLL;AFX_TARG_NEU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseUA\TV_Tracers.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>ReleaseUA/StreetLights.exe</OutputFile>
+      <AdditionalDependencies>..\..\Grid1_0\Release\Grid1_0.lib;..\Free_Util_Dll\Release\Util_Dll.lib;winmm.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRus|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\DebugRus\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\DebugRus\TV_Tracers.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\DebugRus\</ObjectFileName>
+      <ProgramDataBaseFileName>.\DebugRus\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\DebugRus\TV_Tracers.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>_DEBUG;AFX_RESOURCE_DLL;AFX_TARG_RUS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DebugRus\TV_Tracers.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>DebugRus/StreetLights.exe</OutputFile>
+      <AdditionalDependencies>..\..\Grid1_0\Debug\Grid1_0.lib;..\Free_Util_Dll\Debug\Util_Dll.lib;winmm.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\TV_Tracers.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\TV_Tracers.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0402</Culture>
+      <PreprocessorDefinitions>NDEBUG;AFX_RESOURCE_DLL;AFX_TARG_BGR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\TV_Tracers.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>Release/StreetLights.exe</OutputFile>
+      <AdditionalDependencies>..\..\Grid1_0\Release\Grid1_0.lib;..\Free_Util_Dll\Release\Util_Dll.lib;winmm.lib;htmlhelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Accounts.cpp" />
+    <ClCompile Include="AutoOnOff.cpp" />
+    <ClCompile Include="ButonPreset.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ColorStatic.cpp" />
+    <ClCompile Include="DataViewData.cpp" />
+    <ClCompile Include="DataViewDoc.cpp" />
+    <ClCompile Include="DataViewView.cpp" />
+    <ClCompile Include="DateTimeLimits.cpp" />
+    <ClCompile Include="DeviceSetup.cpp" />
+    <ClCompile Include="DisabledLamps.cpp" />
+    <ClCompile Include="DynamicLED.cpp" />
+    <ClCompile Include="EditName.cpp" />
+    <ClCompile Include="EnergyMeters.cpp" />
+    <ClCompile Include="HardwareBase.cpp" />
+    <ClCompile Include="HardwareCom.cpp" />
+    <ClCompile Include="HardwareSetup.cpp" />
+    <ClCompile Include="HardwareTCP.cpp" />
+    <ClCompile Include="JennicModule.cpp" />
+    <ClCompile Include="LampGroups.cpp" />
+    <ClCompile Include="LampInRouterSetup.cpp" />
+    <ClCompile Include="LampPS.cpp" />
+    <ClCompile Include="LampSetup.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MyCurrency.cpp" />
+    <ClCompile Include="NewOperator.cpp" />
+    <ClCompile Include="OperatorManager.cpp" />
+    <ClCompile Include="OperatorSelect.cpp" />
+    <ClCompile Include="OperatorSetup.cpp" />
+    <ClCompile Include="PageSetup.cpp" />
+    <ClCompile Include="PCNumber.cpp" />
+    <ClCompile Include="PropertySheetTabs.cpp" />
+    <ClCompile Include="RouterSelect.cpp" />
+    <ClCompile Include="ServerTCP.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug US|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug US|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRus|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='ReleaseRus|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release US|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release US|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseUA|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='ReleaseUA|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRus|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='DebugRus|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="StringInTextLine.cpp" />
+    <ClCompile Include="SunSet.cpp" />
+    <ClCompile Include="TextLine.cpp" />
+    <ClCompile Include="TimerSetup.cpp" />
+    <ClCompile Include="TimersInRoutersSetup.cpp" />
+    <ClCompile Include="TracerViewBase.cpp" />
+    <ClCompile Include="TracerViewSmal.cpp" />
+    <ClCompile Include="TV_Tracers.cpp" />
+    <ClCompile Include="TV_TracersDoc.cpp" />
+    <ClCompile Include="TV_TracersView.cpp" />
+    <ClCompile Include="TypeLampSetup.cpp" />
+    <ClCompile Include="WpanSetup.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TV_Tracers.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoOnOff.h" />
+    <ClInclude Include="ButonPreset.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ColorStatic.h" />
+    <ClInclude Include="DataViewData.h" />
+    <ClInclude Include="DataViewDoc.h" />
+    <ClInclude Include="DataViewView.h" />
+    <ClInclude Include="DateTimeLimits.h" />
+    <ClInclude Include="DeviceSetup.h" />
+    <ClInclude Include="DisabledLamps.h" />
+    <ClInclude Include="DynamicLED.h" />
+    <ClInclude Include="DynamicLib.h" />
+    <ClInclude Include="EditName.h" />
+    <ClInclude Include="EnergyMeters.h" />
+    <ClInclude Include="HardwareBase.h" />
+    <ClInclude Include="HardwareCom.h" />
+    <ClInclude Include="HardwareSetup.h" />
+    <ClInclude Include="HardwareTCP.h" />
+    <ClInclude Include="JennicModule.h" />
+    <ClInclude Include="LampGroups.h" />
+    <ClInclude Include="LampInRouterSetup.h" />
+    <ClInclude Include="LampPS.h" />
+    <ClInclude Include="LampSetup.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="MyCurrency.h" />
+    <ClInclude Include="NewOperator.h" />
+    <ClInclude Include="OperatorManager.h" />
+    <ClInclude Include="OperatorSelect.h" />
+    <ClInclude Include="OperatorSetup.h" />
+    <ClInclude Include="PageSetup.h" />
+    <ClInclude Include="PCNumber.h" />
+    <ClInclude Include="PropertySheetTabs.h" />
+    <CustomBuild Include="Resource.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug US|Win32'">makehm ID_,IDH__,0x10000 IDM_,IDH_,0x10000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDP_,IDH_,0x30000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDR_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDD_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDW_,IDH_,0x50000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+echo. &gt;&gt;"html\$(TargetName).hm" 
+MakeIDH "html\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug US|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug US|Win32'">html\$(TargetName).hm;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseRus|Win32'">makehm ID_,IDH__,0x10000 IDM_,IDH_,0x10000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDP_,IDH_,0x30000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDR_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDD_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDW_,IDH_,0x50000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+echo. &gt;&gt;"html\$(TargetName).hm" 
+MakeIDH "html\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseRus|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseRus|Win32'">html\$(TargetName).hm;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release US|Win32'">makehm ID_,IDH__,0x10000 IDM_,IDH_,0x10000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDP_,IDH_,0x30000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDR_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDD_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDW_,IDH_,0x50000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+echo. &gt;&gt;"html\$(TargetName).hm" 
+MakeIDH "html\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release US|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release US|Win32'">html\$(TargetName).hm;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">makehm ID_,IDH__,0x10000 IDM_,IDH_,0x10000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDP_,IDH_,0x30000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDR_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDD_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDW_,IDH_,0x50000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+echo. &gt;&gt;"html\$(TargetName).hm" 
+MakeIDH "html\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">html\$(TargetName).hm;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseUA|Win32'">makehm ID_,IDH__,0x10000 IDM_,IDH_,0x10000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDP_,IDH_,0x30000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDR_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDD_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDW_,IDH_,0x50000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+echo. &gt;&gt;"html\$(TargetName).hm" 
+MakeIDH "html\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseUA|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseUA|Win32'">html\$(TargetName).hm;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugRus|Win32'">makehm ID_,IDH__,0x10000 IDM_,IDH_,0x10000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDP_,IDH_,0x30000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDR_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDD_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDW_,IDH_,0x50000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+echo. &gt;&gt;"html\$(TargetName).hm" 
+MakeIDH "html\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugRus|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugRus|Win32'">html\$(TargetName).hm;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">makehm ID_,IDH__,0x10000 IDM_,IDH_,0x10000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDP_,IDH_,0x30000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDR_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDD_,IDH_,0x20000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+makehm IDW_,IDH_,0x50000 resource.h &gt;&gt;"html\$(TargetName).hm" 
+echo. &gt;&gt;"html\$(TargetName).hm" 
+MakeIDH "html\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">html\$(TargetName).hm;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="RouterSelect.h" />
+    <ClInclude Include="ServerTCP.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="StringInTextLine.h" />
+    <ClInclude Include="SunSet.h" />
+    <ClInclude Include="TextLine.h" />
+    <ClInclude Include="TimerSetup.h" />
+    <ClInclude Include="TimersInRoutersSetup.h" />
+    <ClInclude Include="TracerViewBase.h" />
+    <ClInclude Include="TracerViewSmal.h" />
+    <ClInclude Include="TV_Tracers.h" />
+    <ClInclude Include="TV_TracersDoc.h" />
+    <ClInclude Include="TV_TracersView.h" />
+    <ClInclude Include="TypeLampSetup.h" />
+    <ClInclude Include="WpanSetup.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="hlp\AppExit.bmp" />
+    <Image Include="hlp\Bullet.bmp" />
+    <Image Include="hlp\CurArw2.bmp" />
+    <Image Include="hlp\CurArw4.bmp" />
+    <Image Include="hlp\CurHelp.bmp" />
+    <Image Include="hlp\EditCopy.bmp" />
+    <Image Include="hlp\EditCut.bmp" />
+    <Image Include="hlp\EditPast.bmp" />
+    <Image Include="hlp\EditUndo.bmp" />
+    <Image Include="hlp\FileNew.bmp" />
+    <Image Include="hlp\FileOpen.bmp" />
+    <Image Include="hlp\FilePrnt.bmp" />
+    <Image Include="hlp\FileSave.bmp" />
+    <Image Include="hlp\HlpSBar.bmp" />
+    <Image Include="hlp\HlpTBar.bmp" />
+    <Image Include="hlp\RecFirst.bmp" />
+    <Image Include="hlp\RecLast.bmp" />
+    <Image Include="hlp\RecNext.bmp" />
+    <Image Include="hlp\RecPrev.bmp" />
+    <Image Include="hlp\Scmax.bmp" />
+    <Image Include="hlp\ScMenu.bmp" />
+    <Image Include="hlp\Scmin.bmp" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap_v.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\bmp00003.bmp" />
+    <Image Include="res\bmp00004.bmp" />
+    <Image Include="res\bmp00005.bmp" />
+    <Image Include="res\ico00001.ico" />
+    <Image Include="res\ico00002.ico" />
+    <Image Include="res\ico00003.ico" />
+    <Image Include="res\ico00004.ico" />
+    <Image Include="res\ico00005.ico" />
+    <Image Include="res\ico00006.ico" />
+    <Image Include="res\ico00007.ico" />
+    <Image Include="res\ico00008.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\idr_disp.ico" />
+    <Image Include="res\idr_main.ico" />
+    <Image Include="res\idr_tv_t.ico" />
+    <Image Include="res\mainfram.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\TV_Tracers.ico" />
+    <Image Include="res\TV_TracersDoc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="hlp\AfxCore.rtf" />
+    <CustomBuild Include="hlp\AfxPrint.rtf" />
+    <CustomBuild Include="hlp\TV_Tracers.cnt">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug US|Win32'">copy "hlp\%(Filename).cnt" $(OutDir)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug US|Win32'">Copying contents file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug US|Win32'">$(OutDir)\$(InputName).cnt;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseRus|Win32'">copy "hlp\%(Filename).cnt" $(OutDir)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseRus|Win32'">Copying contents file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseRus|Win32'">$(OutDir)\$(InputName).cnt;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release US|Win32'">copy "hlp\%(Filename).cnt" $(OutDir)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release US|Win32'">Copying contents file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release US|Win32'">$(OutDir)\$(InputName).cnt;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "hlp\%(Filename).cnt" $(OutDir)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Copying contents file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)\$(InputName).cnt;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseUA|Win32'">copy "hlp\%(Filename).cnt" $(OutDir)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseUA|Win32'">Copying contents file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseUA|Win32'">$(OutDir)\$(InputName).cnt;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugRus|Win32'">copy "hlp\%(Filename).cnt" $(OutDir)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugRus|Win32'">Copying contents file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugRus|Win32'">$(OutDir)\$(InputName).cnt;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy "hlp\%(Filename).cnt" $(OutDir)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Copying contents file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)\$(InputName).cnt;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="res\TV_Tracers.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="TV_Tracers.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
