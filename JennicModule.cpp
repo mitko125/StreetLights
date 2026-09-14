@@ -1137,7 +1137,7 @@ int CJennicModule::GetNeighbourTableBlobs(CString ip_address, CString MAC_addres
 				i16Lenght = ((uint16_t)(*(pu8Data + 4))) << 8 | *(pu8Data + 5);
 				protocol = *(pu8Data + 6);
 				if( i16Lenght >=19 ){
-					if( protocol = 17 ){
+					if( protocol == 17 ){
 						if( *(pu8Data + 49) == Get_response ){
 							if( *(pu8Data + 53) == 0){	//sucses
 								if( *(pu8Data + 54) == BLOB_TABLE ){	//Blob table

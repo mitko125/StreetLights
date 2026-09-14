@@ -1,4 +1,4 @@
-// Last modified: 11.10.2023 ã. 16:15:15
+// Last modified: 16.7.2026 ã. 13:48:32
 #define IDH__SAVE_DATA                          0x10431
 #define IDH__FILE_PAGESETUP                     0x18003
 #define IDH__DEVICE_SETUP                       0x18004
