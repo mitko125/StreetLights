@@ -38,7 +38,7 @@ inline void TESTHR(HRESULT _hr)
 
 #include <afxpriv.h>
 
-#include "C:\Program Files (x86)\HTML Help Workshop\include\htmlhelp.h"
+// #include "C:\Program Files (x86)\HTML Help Workshop\include\htmlhelp.h"
 #include "html\StreetLights.hm"
 
 

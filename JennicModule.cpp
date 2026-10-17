@@ -785,7 +785,7 @@ int CJennicModule::SetLampLight1(UINT32 id_lamp, unsigned char light)
 				lenght = ((uint16_t)(*(pu8Data + 4))) << 8 | *(pu8Data + 5);
 				protocol = *(pu8Data + 6);
 				if( lenght == 14 ){
-					if( protocol = 17 ){
+					if( protocol == 17 ){
 						if( *(pu8Data + 49) == Set_response ){
 							if( *(pu8Data + 53 ) == 0 ){	//sucses
 								result = old_result;
@@ -866,7 +866,7 @@ int CJennicModule::SetLampGroups1(UINT32 id_lamp, UINT32 bit_groups)
 				lenght = ((uint16_t)(*(pu8Data + 4))) << 8 | *(pu8Data + 5);
 				protocol = *(pu8Data + 6);
 				if( lenght == 14 ){
-					if( protocol = 17 ){
+					if( protocol == 17 ){
 						if( *(pu8Data + 49) == Set_response ){
 							if( *(pu8Data + 53 ) == 0 ){	//sucses
 								result = old_result;
@@ -898,7 +898,7 @@ int CJennicModule::SetLampGroups1(UINT32 id_lamp, UINT32 bit_groups)
 												lenght = ((uint16_t)(*(pu8Data + 4))) << 8 | *(pu8Data + 5);
 												protocol = *(pu8Data + 6);
 												if( lenght == 14 ){
-													if( protocol = 17 ){
+													if( protocol == 17 ){
 														if( *(pu8Data + 49) == Set_response ){
 															if( *(pu8Data + 53 ) == 0 ){	//sucses
 																result = old_result;
@@ -1044,8 +1044,8 @@ int CJennicModule::GetLampGroups1(UINT32 id_lamp, UINT32 *bit_groups)
 				checksum1 = ((uint16_t)(*(pu8Data + 46))) << 8 | *(pu8Data + 47);
 				i16Lenght = ((uint16_t)(*(pu8Data + 4))) << 8 | *(pu8Data + 5);
 				protocol = *(pu8Data + 6);
-				if( i16Lenght >=19 ){
-					if( protocol = 17 ){
+				if( i16Lenght >= 19 ){
+					if( protocol == 17 ){
 						if( *(pu8Data + 49) == Get_response ){
 							if( *(pu8Data + 53) == 0){	//sucses
 								if( *(pu8Data + 54) == BLOB_TABLE ){	//Blob table
@@ -1136,8 +1136,8 @@ int CJennicModule::GetNeighbourTableBlobs(CString ip_address, CString MAC_addres
 				checksum1 = ((uint16_t)(*(pu8Data + 46))) << 8 | *(pu8Data + 47);
 				i16Lenght = ((uint16_t)(*(pu8Data + 4))) << 8 | *(pu8Data + 5);
 				protocol = *(pu8Data + 6);
-				if( i16Lenght >=19 ){
-					if( protocol = 17 ){
+				if( i16Lenght >= 19 ){
+					if( protocol == 17 ){
 						if( *(pu8Data + 49) == Get_response ){
 							if( *(pu8Data + 53) == 0){	//sucses
 								if( *(pu8Data + 54) == BLOB_TABLE ){	//Blob table
